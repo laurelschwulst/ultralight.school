@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Waxwing";
+    src: url("../fonts/waxwing.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  html, body {
+    font-family: "Waxwing", monospace;
+  }
+
+  body {
+    margin: 2.5em;
+  }

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TWA: Total Work of Art</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style-old.css?333">
+    <!-- Tags for social media links -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ultralight.school">
+    <meta property="og:title" content="TWA: Total Work of Art">
+    <meta property="og:image" content="https://cdn.glitch.global/cd2b1b1b-1e8b-4b5d-be08-33f1eaa5b29e/twa-fruitful-alternate.png?v=1740368489529">
+    <meta property="og:description" content="TWA: Total Work of Art">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://ultralight.school">
+    <meta name="twitter:title" content="Ultralight School">
+    <link rel="icon" type="image/png" href="../../images/fav.png" />
+    <style>
+
+      main {
+        text-align: center;
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+        width: 100%;
+      }
+
+      ul {
+        padding-left: 1em;
+      }
+
+      li {
+        padding-left: 0.5em;
+      }
+
+      #twa-svg {
+        filter: drop-shadow(3px 1px 0 rgb(163, 154, 143));
+        fill: #5c5a53;
+        display: inline-block;
+        height: 80vh;
+        height: auto;
+      }
+
+      .metadata time {
+        position: static;
+      }
+
+      .metadata {
+        top: 0.5em;
+      }
+      
+      .metadata .fruit {
+        filter: grayscale(0%);
+      }
+
+      article blockquote {
+        border-left: 2px solid rgba(0,0,0,0.25);
+      }
+
+      table.workshop {
+        border-spacing: 0;
+        border-collapse: collapse;
+        margin: 5em 0;
+        font-family: "Helvetica", sans-serif;
+        font-size: 12px;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+      }
+
+      table.workshop tr, td {
+        border: 1px solid rgba(0,0,0,0.25);
+        border: 1px solid black;
+        border-radius: 0;
+        padding: 0.6em 0.65em 0.5em;
+      }
+
+      table.workshop td {
+        text-transform: uppercase;
+      }
+
+      figure figcaption {
+        font-family: Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+        font-style: normal;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 1em;
+        font-size: 0.65em;
+        margin-bottom: 2em;
+      }
+
+      figure.large figcaption {
+          margin-top: 1em !important;
+        }
+
+      article.twenty-three-letter.clouds {
+        background-image: url('../../assets/images/rainbow3.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .inside-letter {
+        backdrop-filter: blur(10px);
+        height: 100%;
+        width: 100%;
+        position: relative;
+      }
+
+      a.apply-button {
+          top: 0;
+          right: 0;
+        }
+
+        h2 {
+          text-decoration: none !important;
+          text-transform: lowercase;
+        }
+
+      @media only screen and (max-width: 800px) {
+
+        article blockquote {
+          font-size: 0.75em;
+          line-height: 1.25;
+        }
+
+        figure figcaption {
+          font-size: 0.85em;
+        }
+
+        b,
+        article h2,
+        article h1 {
+            font-size: 26px;
+        }
+
+        article h1 {
+            font-size: 46px;
+        }
+
+        body {
+            margin: 10px;
+        }
+
+        header {
+            position: static;
+        }
+
+        .info time {
+            display: none;
+        }
+
+        a.apply-button {
+          display: inline-block;
+          position: normal;
+          top: inherit;
+          left: inherit;
+          right: inherit;
+          font-size: 26px;
+          position: static;
+          float: none;
+        }
+
+        table.workshop {
+          margin: 2.5em 0 5em;
+        }
+
+        article.twenty-three-letter p, article.twenty-three-letter blockquote, article.twenty-three-letter details, article.twenty-three-letter li {
+          font-size: 18px;
+        }
+
+        article.twenty-three-letter blockquote {
+            padding-left: 12px;
+        }
+        
+        ul.small li {
+          font-family: "Helvetica", sans-serif;
+          font-size: 12px;
+          letter-spacing: 0.4px;
+          text-transform: uppercase;
+          line-height: 1.45;
+        }
+
+      }
+
+      
+</style>
+</head>
+
+<body>
+
+    <header>
+
+      <p class="small">
+        <a href="../../index.html" class="button">ultralight.school</a>
+      </p>
+
+      <!-- start svg -->
+      <svg id="twa-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.78 239.44"><path d="M409.6,106.41l2.18-3.1-2.9-.1c-.78-.6-.46-4.54-.65-5.76-.59-3.85-3-10.51-4.46-14.6-2.86-8.02-6.79-17.12-11.12-24.29-1.54-2.55-6.57-8.45-7.26-10.55-.92-2.8,1.05-1.49,1.13-3.47-2.33.79-4.26,2.01-4.03-1.92l3.57-2.83c-.66-.93-.52-.61-1.21-.35-1.25.49-3.62,2.95-4.71,2.37-1.73-.92-3.6-6.06-6.37-6.56-.95-1.68-7.7-6.17-7.85-7.45-.13-1.11,2.5-2.99,3.48-3.73l7.95-6.78c-3.2,2.27-12.05,8.63-13.03,8.78-2.27.36-6.52-5.04-8.45-6.21C321.77-.89,283.33-5.86,245.93,7.24c-27.19-9.59-56.09-9.83-84.38.3C112.05-10.86,54.22,5.45,21.69,50.56-3.58,85.59-6.96,133.57,12.56,172.73c2.69,5.4,7.06,10.65,9.51,15.57,1.13,2.27-.04,3.94,3.26,4.42.82,2.45,9.8,10.22,9.82,11.76,0,.66-.46,1.16-.96,1.46l2.56.29c1.55.01,1.39,2.28,2.04,2.74.51.37,1.66.2,2.56.7,5.94,3.27,11.75,9.26,18.65,13.08,4.05,2.24,8.22,4.24,12.17,6.68l3,1.77,2.69-.07.5,1.57c3.89-.5,7.66,1.66,11.34,2.54,21.08,5.03,41,5.14,62.11.28,2.5-.58,7.01-2.47,9.98-3.06l.08.25c3.89-.5,7.66,1.66,11.34,2.54,2.68.64,5.34,1.2,7.99,1.68,1.89.53,3.64.96,5.08,1.18,12.42,1.9,24.98,1.71,37.2-.36,3.91-.56,7.85-1.3,11.83-2.22,3-.69,8.91-3.28,11.57-3.25,4.7.06,16.68,4.88,22.91,5.83,62.65,9.56,134.15-33.46,140.05-107,.49-6.09.51-11.76.03-17.49-.2-2.38-.58-4.9-.26-7.22ZM206.19,35.9c.65-.53,1.21-.93,1.58-1.11,2.06-.99,9-1.11,11.58-1.05,1.05.02,5.02.17,5.3,1.12.44,1.5-4.18,7.95-5.18,9.73-.68,1.21-1.18,2.75-1.79,4.12-3.5-4.53-7.37-8.8-11.5-12.8ZM190.42,49.19c-.52-1.17-.97-2.54-1.76-3.84-2.08-3.42-5.83-6.7-5.88-11.3,5.74-.14,11.44-.71,17.11.53.6.47,1.19.96,1.78,1.45-4.05,4.08-7.82,8.47-11.26,13.16ZM161.3,16.33v15.47l-.69.75h-13.71l-.63-1.18c.98-2.77,3.32-4.38,4.98-6.56.9-1.18,1.5-2.92,2.56-4.19.56-.67,5.66-5.23,6.1-5.34.53-.14,1.39.93,1.39,1.05ZM136.47,25.15c6.07-3.89,12.49-6.97,19.11-9.58l-.2,1.78-12.59,15.2h-14.4c-.18-1.15.26-1.53.9-2.26.33-.38.87-.84,1.51-1.33.73-.53,1.47-1.05,2.21-1.56,1.32-.88,2.65-1.71,3.47-2.24ZM162.67,15.83l1.13-.74c2.69,2.37,5.19,5,7.57,7.72,1.48,1.68,5.4,6.06,6.14,7.75.29.66.29,1.28.24,1.99h-13.94c-.1,0-1.14-1.56-1.14-1.75v-14.97ZM168.16,16.81c-.1-.84-.04-.79.68-.75,1.41.08,6.3,2.19,7.86,2.91,6.52,3.01,12.9,7.71,18.87,11.83l.46,1.74h-15.31l-12.56-15.73ZM184.01,18.48c-2.89-1.83-8.21-4.07-10.52-5.98-.52-.43-.94-.52-.76-1.41,12.3-1.63,33.43-2.34,47.76-1.86,5.02.5,9.84,1.13,14.26,1.86.99,1.5-4.9,3.49-5.43,3.79-9.04,5.2-17.64,11.52-25.35,18.9-6.25-5.78-13.02-10.92-19.96-15.3ZM211.9,32.55c-.18-1.15.26-1.53.9-2.26,1.24-1.43,5.42-4,7.19-5.13,6.07-3.89,12.49-6.97,19.11-9.58l-.2,1.78-12.59,15.2h-14.4ZM234.75,24.81c.9-1.18,1.5-2.92,2.56-4.19.56-.67,5.66-5.23,6.1-5.34.53-.14,1.39.93,1.39,1.05v15.47l-.69.75h-13.71l-.63-1.18c.98-2.77,3.32-4.38,4.98-6.56ZM246.18,15.83l1.13-.74c2.69,2.37,5.19,5,7.57,7.72,1.48,1.68,5.4,6.06,6.14,7.75.29.66.29,1.28.24,1.99h-13.94c-.1,0-1.14-1.56-1.14-1.75v-14.97ZM251.67,16.81c-.03-.24-.04-.41-.03-.52,9.63,4.29,18.6,10.13,26.48,16.26h-13.88l-12.56-15.73ZM129.76,208.24c.46-.7,13.63-.83,14.98-.14l11.7,14.43c-9.48-3.26-18.48-7.69-26.66-13.58-.07-.17-.09-.38-.02-.71ZM191.62,191.87c3.39,4.46,7.13,8.62,11.13,12.48-.68.57-1.34,1.17-1.9,1.89h-16.69c-.08-.72,0-1.3.25-1.97.23-.63,5.04-8.86,7.21-12.4ZM195.36,207.73c.62.15,1.15-.06,1.59.75-7.59,7.56-17.21,11.87-26.74,15.71-1.62-1.46-.03-1.45.52-2.16l11.63-14.01c2.33-1.34,10.26-.94,13-.29ZM178.94,209.27c-.38,1.47-4.47,5.81-5.6,7.13-2.53,2.96-5.3,6.83-8.84,8.31-.59-.57-.74-14.55-.22-15.96.14-.38.63-.73.89-1.06,2.99.41,5.85-.53,8.72-.48,1.4.02,5.54.18,5.05,2.06ZM184.85,221.72c7-4.37,13.81-9.5,20.1-15.3,9.27,8.51,19.8,15.47,30.72,20.79.15,1.22,0,.79-.64,1.04-3.4,1.36-12.53,1.79-16.51,1.94-14.47.56-29.41-.12-43.8-2.86,1.71-1.52,7.86-4.21,10.12-5.62ZM218.57,191.67c1.36,2.27,2.61,5.03,3.19,6.05.37.65,1.07,1.12,1.49,1.87.42.76,2.67,4.68,2.75,4.99.18.68-.21,1.66-.61,1.66h-15.54c-.82-.67-1.65-1.37-2.5-2.09,4.01-3.89,7.78-8.06,11.22-12.49ZM262.45,209.27c-.38,1.47-4.47,5.81-5.6,7.13-2.53,2.96-5.3,6.83-8.84,8.31-.59-.57-.74-14.55-.22-15.96.14-.38.63-.73.89-1.06,2.99.41,5.85-.53,8.72-.48,1.4.02,5.54.18,5.05,2.06ZM265.87,208.02c2.33-1.34,10.26-.94,13-.29.62.15,1.15-.06,1.59.75-7.59,7.56-17.21,11.87-26.74,15.71-1.62-1.46-.03-1.45.52-2.16l11.63-14.01ZM246.66,222.48c-.1.88-.36,2.11-1.42,2.03-.92-.27-6.11-5.36-7.13-6.47-1.05-1.14-7.18-8.62-7.02-9.55.12-.65,1.08-.71,1.58-.78,4.04-.55,8.5.12,12.61.25,1.59,1.16,1.64,12.26,1.37,14.52ZM240.69,223.45c-.8,1.2-.7.39-1.14.27-7.21-2.05-19.59-9.06-25.53-14.07-.51-.43-.94-.5-.76-1.41.46-.7,13.63-.83,14.98-.14l12.45,15.35ZM163.15,222.48c-.08.69-.26,1.58-.84,1.9-.47-.14-.94-.27-1.41-.41-1.78-1.39-5.46-5.02-6.3-5.93-1.05-1.14-7.18-8.62-7.02-9.55.12-.65,1.08-.71,1.58-.78,4.04-.55,8.5.12,12.61.25,1.59,1.16,1.64,12.26,1.37,14.52ZM268.33,230.22c-1.3-.07-9.85-.95-10.28-1.25-.72-.5-.55-.92.03-1.5,1.49-1.49,7.95-4.3,10.28-5.75,14.61-9.12,28.42-21.55,38.37-36.47.8-1.2,5.07-7.57,4.42-8.84h-1.43c-1.81,1.09-5.27,9.93-8.1,10.74-1.18.34-2.52-.32-3.31.88,2.52,1.74.61,3.62-.92,5.49-2.07,2.52-5.81,6.33-8.22,8.49-1.59,1.43-3.44,2.51-4.81,4.24h-16.69c-.08-.72,0-1.3.25-1.97.29-.79,7.7-13.38,8.23-13.98.97-1.09,2.12-1.06,2.88-2.26-2.47-3.37,2.82-7.49,2.13-11.24-2.88,2.18-2.92,7.41-5.34,10.38l-5.39.61c.4,1.08,1.96.06,3.01.95.37.32.61.8.66,1.32.21,2.45-7.61,14.21-9.84,16.2h-16l-.69-.75v-15.47c0-.19.53-1.13.77-1.29.8-.53,2.29-.01,2.43-.96-5.79.39-1.65-6.65-3.89-9.98l-1.08,4.3-.26,4.71c-.12.19-3.8.97-4.14.97h-7.54v.5h10.29c.11,0,1.38,1.46,1.54,1.81.74,1.57.8,11.74.54,13.93-.24,2.04-.83,2.07-2.51,2.25-2.95.32-10.94.42-13.76,0-2.19-.33-3.97-4.7-5.25-6.64-.64-.98-2.19-2.79-2.72-3.74-.46-.83-1.97-3.45-2.47-5.41.58-.77,1.16-1.55,1.72-2.34l2.57-.36-2.07-.35c.51-.72,1.01-1.45,1.5-2.18.8-1.2,5.07-7.57,4.42-8.84h-1.43c-1.7,1.02-4.85,8.87-7.57,10.5l-.59-.1c-2.25-1.37-3.83-9.4-5.01-10.01-.87-.45-.73.77-.69,1.25.17,1.88,4.03,8.13,3.19,9.2-3.96,1.49-8.25-.25-12.1.02-.52.04-2.05.16-2.05,1h13.73c2.01,1.67.22,3.46-1.24,5.24-2.07,2.52-5.81,6.33-8.22,8.49-.13.12-.27.23-.41.35-2.66-2.33-5.31-4.8-7.54-7.32-.68-.77-3.55-4.23-3.75-5.72.34-.19.67-.37.97-.62l4.63-.43c.03-.32-.61-.99-.69-.99-.94,0-2.36.1-3.72.14-1.49-3.25,3.14-7.1,2.49-10.62-2.88,2.18-2.92,7.41-5.34,10.38l-.41.05c-2.06-.78-5.9-9.03-7.91-10.81h-1.61c-.12.49,0,1.27.35,2.06.88,2.01,3.5,5.93,5.78,9.14l-1.59.18c.3.8,1.23.45,2.12.57.55.77,1.06,1.48,1.52,2.09-.48,3.12-7.69,13.9-9.81,15.8h-16l-.69-.75v-15.47c0-.19.53-1.13.77-1.29.8-.53,2.29-.01,2.43-.96-5.79.39-1.65-6.65-3.89-9.98l-1.08,4.3-.25,4.71c-.12.19-3.8.97-4.14.97h-7.54v.5h10.29c.11,0,1.38,1.46,1.54,1.81.74,1.57.8,11.74.54,13.93-.24,2.04-.83,2.07-2.51,2.25-2.95.32-10.94.42-13.76,0-2.19-.33-3.97-4.7-5.25-6.64-.64-.98-2.19-2.79-2.72-3.74-.69-1.25-3.74-6.49-2.23-7.55l4.04-.57-5.74-.98c-2.25-1.37-3.83-9.4-5.01-10.01-.87-.45-.73.77-.69,1.25.17,1.88,4.03,8.13,3.19,9.2-3.96,1.49-8.25-.25-12.1.02-.52.04-2.05.16-2.05,1h13.94c2.11,0,5.38,7.59,6.43,9.45.37.65,1.07,1.12,1.49,1.87.42.76,2.67,4.68,2.75,4.99.18.68-.21,1.66-.61,1.66h-15.54c-1.93-1.59-3.97-3.31-5.96-5.1-3.31-3.15-6.43-6.59-9.33-10.39-.51-.89-.78-1.66-.48-1.98l5.49-.51c.03-.32-.61-.99-.69-.99-1.8,0-5.37.36-6.86,0l-2.56-2.69c-1.92-2.82-4.11-6.97-5.47-8.18h-1.61c-.05.2-.05.46-.02.74l-.7-.74c.26.43.53.85.8,1.28.06.25.15.51.26.78.98,2.24,4.11,6.82,6.52,10.18.87,2.08,0,3.6,3.05,4.08.05.06.1.13.15.19.51,1.16,2.46,3.26,4.5,5.39,1.29,1.45,2.61,2.87,3.97,4.24.75.88,1.25,1.59,1.26,1.94,0,.66-.46,1.16-.96,1.46l2.56.29c1.55.01,1.39,2.28,2.04,2.74.51.37,1.66.2,2.56.7.33.18.66.37.98.57,3.88,3.23,7.94,6.2,12.12,8.91,1.78,1.3,3.62,2.53,5.54,3.6,2.88,1.59,5.81,3.06,8.68,4.66.1.93-.07.59-.66.82-3.4,1.36-12.53,1.79-16.51,1.94-51.5,1.98-114-29-128.18-87.13C-8.35,80.83,36.69,31.28,88.06,15.72c20.57-6.23,42.06-8.13,63.18-4.63.22.33.09.68-.22,1.04-17.67,8.5-33.55,21.41-45.82,38.43-3.19,4.42-6.03,9.05-8.52,13.85,1.02-1.52,2.08-3.03,3.17-4.52-.55.96-.99,1.78-1.2,2.34-.28.76-.6,1.3-.44,2.19h1.01c2.12-1.49,6.04-9.11,6.99-9.91,1.28-1.08,4.06-1.16,4.35-1.49.89-1.03-1.6-1.09-1.36-2.22,1.16-.91,1.48-2.41,2.28-3.51,1.76-2.42,10.48-11.38,12.8-12.48,2.06-.99,9-1.11,11.58-1.05,1.05.02,5.02.17,5.3,1.12.44,1.5-4.18,7.95-5.18,9.73-1.74,3.11-2.29,8.37-6.67,7.44-.26,1.47,1.35.95,1.42,2.24.16,2.99-2.6,5.47-2.8,8.48l1.15.27c1.54-3.78,2.64-8.08,6.17-10.27.11-.58-.9-1.18-.85-1.89.03-.35,2.6-5.31,3.06-6.16,1.85-3.46,4.21-6.62,6.11-10.04,5.8-.7,11.97-1.1,17.73-.11v16.22c0,1.29-3.1,1.18-3.2,1.5-.36,1.18,1.49.59,2.28,1,.22.11.92.91.92.99v8.98l1.14.75c1.3-.3.46-7.18.67-8.76.14-1.11.94-1.91.95-2.48.01-.83-1.2-1.32-1.41-2.96-.34-2.72.11-10.61.46-13.53.17-1.44.61-1.94,1.83-2.5l13.53.25c.76-.11,1.09.38,1.6.75,1.2.86,5.35,7.4,6.3,9.09.45.81,3.18,6.05,3.25,6.44,0,0,0,.02,0,.02-.41.58-.83,1.15-1.23,1.74,0,.01-.02.03-.03.04l-6.49.42c-.03.32.61.99.69.99h4.85c-1.79,2.66-4.61,7-5.25,8.71-.28.76-.6,1.3-.44,2.19h1.01c2.12-1.49,6.04-9.11,6.99-9.91.32-.27.75-.48,1.2-.65,1.46,1.46,3.7,7.27,4.45,8.66.35.65-.08,1.26,1.13.98-.36-3.5-3.2-6.32-2.72-9.96,1.05,0,2.4.05,2.26-1.51-.82.15-1.49.18-2.08.13-.49-.37-1.4-.66-1.26-1.36,1.16-.91,1.48-2.41,2.28-3.51,1.18-1.62,5.49-6.18,8.9-9.34,4.3,3.86,8.24,8.22,11.82,12.85.14.65-.6,1.06-1.59,1.32-.39.04-.82.02-1.3-.08-.02.13-.02.23-.01.33-1.08.15-2.15.18-2.59.17.86,1.13,2.25,1.14,3.73,1.06.15.16.27.36.28.68.16,2.99-2.6,5.47-2.8,8.48l1.15.27c1.33-3.26,2.34-6.92,4.86-9.27.14.04.28.09.42.15,2.03.9,5.46,8.44,7.42,10.37l1.16-.26c.39-.48.27-1.07.13-1.64-.41-1.66-5.88-9.64-7.22-11.46-.31-.42-.62-.83-.94-1.24.78-1.62,2.21-4.36,2.54-4.97,1.85-3.46,4.21-6.62,6.11-10.04,5.8-.7,11.97-1.1,17.73-.11v16.22c0,1.29-3.1,1.18-3.2,1.5-.36,1.18,1.49.59,2.28,1,.22.11.92.91.92.99v8.98l1.14.75c1.3-.3.46-7.18.67-8.76.14-1.11.94-1.91.95-2.48.01-.83-1.2-1.32-1.41-2.96-.34-2.72.11-10.61.46-13.53.17-1.44.61-1.94,1.83-2.5l13.53.25c.76-.11,1.09.38,1.6.75,1.2.86,5.35,7.4,6.3,9.09.45.81,3.18,6.05,3.25,6.44.1.56.02,1.15.02,1.72l-7.77.51c-.03.32.61.99.69.99h7.77c1.35,0,4.18,7.41,5.03,9,.35.65-.08,1.26,1.13.98-.36-3.5-3.2-6.32-2.72-9.96,1.05,0,2.4.05,2.26-1.51-5.6,1.03-5.21-3.09-7.38-6.67-2.08-3.42-5.83-6.7-5.88-11.3,4.6-.11,9.18-.49,13.74,0,7.53,6.03,13.97,12.23,18.93,17.41-.96.94-4.38,1.07-5.24,1.05,1.59,2.09,4.95.35,7.46,1.3,1.03,1.11,1.98,2.16,2.85,3.13,1.69,2.61,3.52,6.08,4.76,7.3l1.16-.26c.39-.48.27-1.07.13-1.64-.06-.25-.25-.66-.51-1.16.07-.88.13-1.74-.43-2.66-1.54-2.55-6.57-8.45-7.26-10.55-.92-2.8,1.05-1.49,1.13-3.47-2.33.79-4.26,2.01-4.03-1.92l3.57-2.83c-.66-.93-.52-.61-1.21-.35-1.25.49-3.62,2.95-4.71,2.37-1.73-.92-3.6-6.06-6.37-6.56-.95-1.68-7.7-6.17-7.85-7.45-.13-1.11,2.5-2.99,3.48-3.73l7.95-6.78c-3.2,2.27-12.05,8.63-13.03,8.78-2.27.36-6.52-5.04-8.45-6.21-5.28-3.22-10.67-6.05-16.15-8.5,0-.08.02-.17.04-.27,13.82-1.84,28.85-2.39,42.69-.45,46.63,6.53,103.03,45.66,106.78,101.53,5.39,80.3-73.73,121.61-137.38,118.06ZM286.35,82.26c-10.45,19.93-22.49,39.08-32.24,59.38-6.47,7.77-10.19,20.93-16.19,28.51-.74.93-1.3,1.25-2.47,1.44-2.43.38-7.82.54-10.56.62-4.86.13-9.32-.48-13.97-.61-2.77-.08-11.08,1.41-12.33-1.08l.28-40.78c-.49-.49-4.11,5.79-4.47,6.42-5.79,9.93-12.03,23.96-18.53,32.87-3.89,5.34-14.55,2.66-20.28,2.58-3.1-.04-18.46.6-19.73-.67-1.08-2.98-.82-6.99-.71-10.22.83-24.73,3.35-49.53,3.35-74.28,1.25-5.17.21-11.66,1.15-16.72.11-.61.97-1.97,1.38-1.97h32.41c.66.19,1.54,1.7,1.42,2.49-.33,11.39-.81,22.73-1.12,34.12-.07,2.53-1.91,6.83.53,8.63l23.56-43.2,2.12-1.79c9.45.13,20.06-1.03,29.39-.27,1.37.11,2.78.25,3.91,1.12l-.57,43.03,24.54-43.61,35.48.09c.27.92-.07,1.75-.38,2.59-1.04,2.82-4.39,8.29-5.98,11.33ZM362.93,67.75c-13.12.21-28.7-1.22-41.4-.05-1.1.1-2.15.06-3.02.89-6.71,11.72-13.5,23.45-20.05,35.25-4.39,7.9-8.36,16.18-12.74,24.13-7.65,13.92-16.22,27.43-23.03,41.78l.7,1.33c1.45,1.04,10.88.47,13.48.49,2.31.02,4.36.02,6.66,0,2.85-.03,14.1.72,15.42-.93,2.85-3.55,3.96-11.35,8.36-14.39,1.37-.61,19.96-.56,22.64-.31,8.79.81,2.6,9.19,5.43,14.97,1.11.45,2.28.62,3.47.71,6.74.52,19.09.62,25.75,0,1.47-.14,4.12-.43,4.62-2.08l.69-99.34c-.78-4.37-4.24-2.5-6.99-2.46ZM335.27,128.26c-.07.24-1.84.91-1.99.91-2.34,0-8.97.47-10.62,0-2.62-.75.89-3.43,1.11-3.92.5-1.13.17-2.47.72-3.75,2.87-6.62,7.11-12.75,10.47-19.13.81.53.77,1.07.87,1.92.84,7.72-1.04,16.2-.55,23.98ZM135.49,73.34l-8.36,24.59c-1.28.98-6.9.45-8.99.51-1.08.03-2.18.58-3.35.59-4.63.05-10.01-1.91-14.53.52l-24.06,70.9-1.33.9-33.01-.03c-1.63-.79-1.23-3.8-.87-5.34,5.77-20.31,14.92-41.11,20.13-61.43,1.51-5.89,1.09-5.65-5.01-6.11-4.89-.37-18.92,1.02-22.22-.69-1.6-.83-1.71-1.62-1.41-3.37,1.34-7.8,6.65-16.47,7.86-24.57l3.04-2.54c15.39-.12,31-.23,46.24-.14,12.12.07,24.34-.06,36.32.61,1.94.11,9.19-.74,9.72.89l-.17,4.71Z"/></svg>
+      
+
+    </header>
+
+    <article class="twenty-three-letter clouds">
+
+      <div class="metadata small">
+        <span class="info">
+            <time datetime="2025-03-30 11:11" style="color: black">March 30, 2025 &nbsp; &bull; &nbsp;</time>
+            <a href="../../index.html#offerings">Spring & Summer 2025 Workshops</a> &nbsp;&nbsp; / &nbsp;&nbsp; TWA
+        </span>
+        <span class="fruit">🌎 🌍 🌏</span>
+      </div>
+
+      <div class="inside-letter">
+
+      <h1 style="margin-bottom: 0.25em; margin-top: 0.25em;">TWA</h1>
+
+      <h2 style="margin: 0; text-decoration: none; font-size: 1em; text-transform: none;">
+        Total Work of Art — exploring digital, physical, & temporal forms
+      </h2>
+
+      <!-- <a class="apply-button" target="_blank" style="opacity: .5">applications closed</a> -->
+
+      <!-- <p style="font-family: serif; font-size: 0.75em;">January 14, 21, 28 (2024) — NYC</p> -->
+
+      <!-- <figure class="orb" style="position: relative; border-radius: 50%; padding: 2em 0 0; max-width: 800px; margin: 2.5em auto;">
+        <img src="images/ultralight-website.png" style="mix-blend-mode: multiply; border-radius: 50%;">
+        <span style="position: absolute; right: 30%; bottom: 15%; font-size: 1.25em; pointer-events: none;">🍓</span>
+      </figure> -->
+
+      <table class="workshop">
+
+        <tr>
+          <td>
+            Title
+          </td>
+          <td>
+            TWA: Total Work of Art
+          </td>
+        </tr>
+  
+        <tr>
+          <td>
+            Instructors
+          </td>
+          <td>
+            Stephen Kwok,<br>
+            Laurel Schwulst,<br>
+            & Bryant Wells
+          </td>
+        </tr>
+  
+        <tr>
+          <td>
+            Dates
+          </td>
+          <td>            
+            14 sessions (over 7 weeks):<br>
+            <ul class="small">
+              <li>Orientation: Sunday, June 15</li>
+              <li>
+                Digital:
+                <ul>
+                  <li>Friday, June 20</li>
+                  <li>Sunday, June 22</li>
+                  <li>Friday, June 27</li>
+                  <li>Sunday, June 28</li>
+                </ul>
+              </li>
+              <li>
+                Physical:
+                <ul>
+                  <li>Sunday, July 6</li>
+                  <li>Friday, July 11</li>
+                  <li>Sunday, July 13</li>
+                  <li>Friday, July 18</li>
+                </ul>
+              </li>
+              <li>
+                Temporal:
+                <ul>
+                  <li>Sunday, July 20</li>
+                  <li>Friday, July 25</li>
+                  <li>Sunday, July 27</li>
+                  <li>Friday, August 1</li>
+                </ul>
+              </li>
+              <li>Finale: Sunday, August 3</li>
+            </ul>
+            ( 2025 )
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Times
+          </td>
+          <td>
+            Tuesdays: 7-10pm<br>
+            Sundays: noon-4pm
+          </td>
+        </tr>
+  
+        <tr>
+          <td>
+            Locations
+          </td>
+          <td>
+            Telos.Haus (303 Van Eyck, NYC) — Primary<br>
+            Amant Foundation (???) — Secondary<br>
+            Light Industry — Tertiary
+          </td>
+        </tr>
+  
+        <tr>
+          <td>
+            Price
+          </td>
+          <td>
+            $2000 &nbsp;<br>
+            ( half priced scholarships available )&nbsp;
+          </td>
+        </tr>
+  
+        <tr>
+          <td>
+            Application Deadline
+          </td>
+          <td>
+            April 30, 2025 at 11:59pm EST 
+          </td>
+        </tr>
+  
+      </table>
+
+      <div style="font-family: serif; font-size: 0.75em;">
+
+        <p>
+          In “TWA: Total Work of Art,” we invite artists, designers, writers, programmers, and anyone else interested to shapeshift their concept across three modalities: 1) digital, 2) physical, and 3) temporal. Inspired by wide-ranging examples of design as world-building — think Bauhaus, Beyoncé, Bernadette Corporation — this workshop responds to how culture is experienced today, inviting participants to develop a core concept across multiple forms and points of access.</p><p>
+          This 7 week workshop is led by three teachers: Stephen Kwok, Laurel Schwulst, and Bryant Wells. Meeting twice a week (on Fridays and Sundays), each session includes conversational lectures, technical demonstrations, presentation and critique time, and guest visits. The workshop culminates in a public event in which the participants present the totality of their work.
+        </p>
+
+        <h2>
+          Keywords
+        </h2>
+        
+        <ul>
+          <li>World-building</li>
+          <li>Translation</li>
+          <li>Transportation</li>
+          <li>Access</li>
+          <li>Shapeshifting</li>
+          <li>Relational</li>
+          <li>Responsive</li>
+          <li>Architecture</li>
+          <li>Ambient</li>
+
+        </ul>
+
+<!--         <details>
+          <summary>world-building</summary>
+          small in file size, quick to load ... or lets you see world in new way
+        </details>
+
+        <details>
+          <summary>straightforward</summary>
+          simple & strong in concept
+        </details>
+
+        <details>
+          <summary>flexible</summary>
+          to changing conditions and environments
+        </details>
+
+        <details>
+          <summary>sustainable</summary>
+          in terms of environment & personal practice
+        </details>
+
+        <details>
+          <summary>accessible</summary>
+          in terms of web (alt-text, screen readers) and conditions (low bandwidth)
+        </details>
+
+        <details>
+          <summary>in situ</summary>
+          related to environment, in harmony with physical surroundings
+        </details>
+
+        <details>
+          <summary>energy</summary>
+          invisible but physical ... wind power, solar power
+        </details> -->
+
+        <!-- <details>
+          <summary>method or process of working</summary>
+          what does it mean to work in an ultralight way?
+        </details> -->
+
+<!--         <figure>
+          <img src="http://fruitful.school/workshops/ultralight/images/laurel-atap.webp" alt="a photo of a laptop on a light wooden desk with the mostly blue Alt Text as Poetry website displayed on it" style="display: block;">
+          <figcaption>
+              <a href="https://alt-text-as-poetry.net" target="_blank">Website</a> & <a href="https://youtu.be/PUooHXD0JaA?si=cSTdOBAyrsQR7YC2" target="_blank">Video</a> for Alt-Text as Poetry<br>
+              Laurel Schwulst & Taichi Wi, 2020 –
+          </figcaption>
+        </figure> -->
+        
+        <figure>
+        <img src="../../assets/images/prism.png">
+        </figure>
+
+<!--         <h2>Background</h2>
+
+        <p>
+          The word “ultralight” simply means “extremely lightweight” —
+        </p>
+
+        <p>
+          In the physical realm, examples include planes and kites. Some kites are so lightweight they can fly indoors, for instance. While some planes are so lightweight they’ve earned the title “microlight.” Or there’s the subreddit called <a href="https://www.reddit.com/r/Ultralight/" target="_blank">r/Ultralight</a></i>, dedicated to lightweight backpacking equipment to ideally make your journey less burdensome …
+        </p>
+
+        <p>
+          But what does “ultralight” mean for technology and the internet? At first, ideas around lightness or heaviness might not intuitively make sense because ethereal technology metaphors like “the cloud” often hide or downplay physical infrastructure. But in reality, the internet is a physical thing, connected by underwater submarine cables and served from data centers containing many literal computers worldwide.
+        </p>
+
+        <p>
+          Websites, which make up some of the internet, can also be lightweight. From a pragmatic standpoint, light websites have a usefulness — they are quick to load, often accessible by default, and use less energy and resources which can have an impact on the environment. (If you search for “lightweight websites,” you may come across collections of websites <a href="https://512kb.club" target="_blank">small</a> or even <a href="https://1mb.club">smaller</a> in file size, with few dependencies.)
+        </p>
+
+        <figure>
+          <img src="http://fruitful.school/workshops/ultralight/images/marie-solar.webp" alt="the light yellow solar Low Tech Magazine website, which sometimes goes offline" style="display: block;">
+          <figcaption>
+              <a href="https://solar.lowtechmagazine.com/" target="_blank">Solar-powered Website</a> for Low Tech Magazine<br>
+              Marie Otsuka, 2018 –
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="http://fruitful.school/workshops/ultralight/images/marie-radio-amnion.webp" alt="the website for Radio Amnion, a sound art project that releases new works three days around a full moon, here showing a waxing gibbous moon, so no audio is available at this time" style="display: block;">
+          <figcaption>
+              <a href="https://radioamnion.net" target="_blank">Website</a> for Radio Amnion<br>
+              Marie Otsuka & Minkyoung Kim, 2021
+          </figcaption>
+        </figure>
+
+        <p>
+          Websites can be lightweight in metaphorical ways, too. Perhaps it’s about seeing the world in a new way. Maybe Italo Calvino, in the chapter on “<a href="https://zerogravity.empac.rpi.edu/lightness/" target="_blank">Lightness</a>” from his book <i>Six Memos for the Next Millennium</i>, said it best —
+        </p>
+
+        <blockquote>
+          “Whenever humanity seems condemned to heaviness, I think I should fly like Perseus into a different space. I don’t mean escaping into dreams or into the irrational. I mean that I have to change my approach, look at the world from a different perspective, with a different logic and with fresh methods of cognition and verification. The images of lightness that I seek should not fade away like dreams dissolved by the realities of present and future...”
+        </blockquote>
+        
+        <p>
+          This is not to say that heaviness does not also have its merits. It’s only to say that in the realm of ever-expanding technology, certain intentional limits enable life, sustainability, and accessibility. In this workshop, we’ll think through this together while questioning these assumptions in dialogue.
+        </p>
+
+  <figure>
+    <img src="http://fruitful.school/workshops/ultralight/images/ben-robida.webp" alt="the website for Radio Amnion, a sound art project that releases new works three days around a full moon, here showing a waxing gibbous moon, so no audio is available at this time" style="display: block;">
+    <figcaption>
+        <a href="http://www.robidacollective.com" target="_blank">Website</a> for Robida<br>
+        Benjamin Earl & Kirsten Spruit, 2021 –
+    </figcaption>
+  </figure>
+
+  <figure>
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 0.5em;">
+      <img src="http://fruitful.school/workshops/ultralight/images/ben-coding-in-situ1.webp" alt="photo of Ben Earl sitting in a bright green grassy field on a chair with his laptop" style="display: block;">
+      <img src="http://fruitful.school/workshops/ultralight/images/ben-coding-in-situ3.webp" alt="photo of Ben Earl holding a small server with a solar panel attached for the coding in situ workshop with a grass field behind">
+      <img src="http://fruitful.school/workshops/ultralight/images/ben-coding-in-situ2.webp" alt="some physical computing devices inside a plastic bag which is tied to a tree" style="display: block;">
+    </div>
+    <figcaption>
+        Coding in Situ, Benjamin Earl, 2023<br>
+        (third photo by Hackers and Designers)
+    </figcaption>
+  </figure>
+
+  <p>
+    Historically, design and art styles are largely a result of the limitations and powers of the technology available at that time. Today, we believe there are ways of making that have been lost in the quest to modernize everything. By creatively exploring websites with a maximum file size, or writing a text-only website that also works as an auditory reading, or programming a site so it’s only available at specific times, for instance, we may be able to create on the web in unique and possibly nourishing ways, for ourselves, our audiences, and our environments.
+  </p>
+
+  <p>
+    <i>Many people have inspired our thinking about the ultralight web. Here is a more <a href="https://laurelsletter.substack.com/p/laurels-letter-fall-winter-2023" target="_blank">expansive</a> version of this writing, including references and inspirations.</i>
+  </p>
+ -->
+<!--   <hr>
+
+<p><b>What topics are covered?</b></p>
+        <p>
+            <ul>
+                <li>creating minimum viable website</li>
+                <li>basics of HTML & CSS</li>
+                <li>introduction to JavaScript through programming on dates & time</li>
+                <li>beginning philosophies and principles of web accessibility</li>
+                <li>introduction to physical computing</li>
+                <li>developing strong concepts & flexible formats</li>
+            </ul>
+
+        </p>
+
+        <p>
+          <b>What is the workshop format?</b>
+        </p>
+        <p>
+          The workshop meets for three sessions, each on a Sunday in January. (January 14, 21, 28.) Each of these sessions is self-contained; that is, we do some sort of lecture, demonstration, workshop, and sharing all within the course of four hours. Each session, participants should come present and ready to work and dialogue.
+        </p>
+        <p>
+          <b>What is the expected workload?</b>
+      </p>
+      <p>
+        Over three weeks, participants will attend workshop sessions with demonstrations and working prompts. While there may be opportunities to extend these prompts into personal time, and share the following week, it's up to each participant how much work outside of workshop sessions they'd like to take on.
+      </p>
+        <p>
+          <b>Do I need any technical experience to join?</b>
+        </p>
+        <p>
+            There are no strict prerequisites. However, a basic familiarity with hand-coding websites with HTML and CSS is encouraged. You can start learning with Laurel’s <a href="https://veryinteractive.net/tutorials/index.html">Tutorials</a> page or any other resources you find.
+        </p>
+        <p>
+            <b>What materials are required?</b>
+        </p>
+        <p>
+          Participants will bring a laptop with a text editor installed, such as VS Code or Sublime Text. For the final workshop session, participants are recommended to procure a few physical computing components that will cost around $35–40 USD. We will send the list of components upon admission to the workshop.
+        </p>
+        <p>
+          <b>Can I participate remotely?</b>
+        </p>
+        <p>
+          This winter, we are only doing in-person in NYC. However, if you are interested in future remote possibilities, feel free to <a href="https://airtable.com/appQipN5A6u32k84s/shrFp1b4tg8oP122Y" target="_blank">add your email here</a>.
+        </p>
+        <b>Are there scholarships available?</b>
+        <p>
+          Yes, there are two half-priced slots available for individuals who need help funding the workshop.
+        </p>
+            <b>Who might be good for this workshop?</b>
+        </p>
+        <p>
+          We imagine this workshop is ideal for anyone interested in experimenting with lightweight websites as an extension of creative practice, and excited to dialogue with others about them. Ideally, you have some strong ideas and possibly writing ready to share through the format of websites. Please note that this is not an extensive programming course — the focus is on applying concepts learned in demonstrations rather than in-depth programming instruction.
+        </p> -->
+      
+      <hr>
+
+      <p>
+        <a href="http://www.kwokstephen.com/">Stephen Kwok</a> makes experimental events that incorporate sculpture, live performance, digital media, and text into participatory systems. He lives in Brooklyn, teaches design at Brooklyn College, and serves as the Curator of Public Engagement at Dia Art Foundation.
+      </p>
+      <p>
+<a href="http://laurelschwulst.com/">Laurel Schwulst</a> is an artist, designer, writer, educator, and technologist interested in ambient forms of design and literature, public works, and the poetic potential of the world wide web. Laurel currently teaches design at Princeton University and founded Ultralight School (and previously Fruitful School).
+      </p>
+      <p>
+        <a href="https://www.bryantwells.com/">Bryant Wells</a> is a New York-based designer who works independently and collaboratively with artists, writers, musicians, and institutions to create websites, publications, identities, and objects. His practice explores the political and cultural effects shaping networked communication, and the metaphorical and material implications of "what’s in the air.” Bryant teaches design at the Parsons School of Design and the Yale Graphic Design MFA.
+      </p>
+        
+
+<!--         <div style="text-align: center; margin-top: 1.5em;">
+          <a target="_blank" class="button apply small" style="opacity: .5">Applications closed</a>
+        </div> -->
+
+        <hr>
+
+        <div class="outro small">
+            🌏 🌍 🌎  
+          <br /><br>
+            posted by Laurel Schwulst, Bryant Wells, and Stephen Kwok<br />
+            3.30.2025
+            <!-- This website is 11.9 MB with its assets ... could be improved probably by removing videos -->
+        </div>
+
+</div>
+
+</div>
+
+    </article>
+    
+    <footer>
+      <div class="small"><span style="font-size:14px"><span class="no-style">©</span> <a href="../../index.html" style="text-decoration: none;">𝒻𝓇𝓊𝒾𝓉𝒻𝓊𝓁.𝓈𝒸𝒽𝑜𝑜𝓁</a></span><br><br>
+      </div>
+    </footer>
+
+  </body>
+  </html>
