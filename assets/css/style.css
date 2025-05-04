@@ -32,6 +32,21 @@ img {
   max-width: 100%;
 }
 
+iframe {
+  height: calc(100vh - (40px + 6em));
+}
+
+iframe,
+img {
+  opacity: 0.9;
+  mix-blend-mode: multiply;
+  filter: grayscale(100%);
+}
+
+img.color {
+  filter: grayscale(0%);
+}
+
 pre,
 code {
   font-family: "Waxwing", monospace;
@@ -41,10 +56,16 @@ main {
   text-align: center;
 }
 
-h1 {
+h1,
+h2 {
   font-weight: normal;
   font-size: 1em;
   margin-top: 0;
+}
+
+h2 {
+  text-decoration: underline;
+  margin: 3.75em 0 2.25em;
 }
 
 figure#logo {
