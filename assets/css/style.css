@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: "Waxwing";
   src: url("../fonts/waxwing.ttf") format("truetype");
@@ -26,6 +30,18 @@ body.day {
 html.night,
 body.night {
   background: lightcyan;
+}
+
+a {
+  color: black;
+}
+
+a.no-underline {
+  text-decoration: none;
+}
+
+a.no-underline:hover {
+  text-decoration: hover;
 }
 
 img {
@@ -73,10 +89,39 @@ figure#logo {
   margin: 3.65em auto 3.75em;
 }
 
+article {
+  margin: 3.75em auto;
+  padding: 2.5em;
+  border: 25px solid rgba(0, 0, 0, 0.05);
+  /* */
+  min-height: 500vh;
+}
+
+article h1 {
+  text-align: left;
+  font-size: 5em;
+  font-weight: bold;
+  /* font-weight: 300; */
+}
+
+/* class */
+
+article#class {
+  max-width: 1075px;
+}
+
+figure#twa {
+  margin: 3.65em auto 3.75em;
+  max-width: 1075px;
+}
+
 /* mobile */
 
 @media screen and (max-width: 555px) {
   body {
     margin: 4.25em 1.5em;
+  }
+  iframe {
+    height: 60vh;
   }
 }
