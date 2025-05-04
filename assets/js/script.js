@@ -21,10 +21,14 @@ async function setDayOrNight() {
 
   if (nowLocal >= sunsetLocal || nowLocal < sunriseLocal) {
     document.body.classList.add("night");
+    document.documentElement.classList.add("night");
     document.body.classList.remove("day");
+    document.documentElement.classList.remove("day");
   } else {
     document.body.classList.add("day");
+    document.documentElement.classList.add("day");
     document.body.classList.remove("night");
+    document.documentElement.classList.remove("night");
   }
 }
 
