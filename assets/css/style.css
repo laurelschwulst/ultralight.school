@@ -194,6 +194,8 @@ figure#twa {
     top: 0.25em;
     left: 0.25em;
     right: 0.25em;
+    position: absolute;
+    mix-blend-mode: normal;
   }
   nav#dropdown select {
     display: block;
