@@ -80,7 +80,7 @@ footer {
 }
 
 nav#dropdown {
-  position: fixed;
+  position: absolute;
   top: 1em;
   left: 1em;
   z-index: 5;
@@ -196,6 +196,8 @@ figure#twa {
     right: 0.25em;
     position: absolute;
     mix-blend-mode: normal;
+    filter: grayscale(0%);
+    opacity: 1;
   }
   nav#dropdown select {
     display: block;
