@@ -23,14 +23,42 @@
         mix-blend-mode: multiply;
         filter: grayscale(100%);
       }
+      article.letter.course {
+        background: transparent;
+      }
+      article.course p,
+      article.course .article-content ul,
+      article.course blockquote,
+      article.course h2 {
+        font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        font-weight: bold;
+        line-height: 1.35;
+        font-size: 0.7em;
+      }
+      article.course h2 {
+        background: black;
+        color: lemonchiffon;
+        text-decoration: none;
+      }
+      article.course h2.subtitle {
+        background: transparent;
+        color: black;
+        font-size: 0.7em;
+      }
+      table.course,
+      .article-meta {
+        font-family: "Waxwing", monospace;
+        line-height: 1.5;
+        /* text-transform: uppercase; */
+      }
     </style>
   </head>
 
   <body>
     <a href="../../soon.html" class="back-to-home">ultralight.school</a>
     <select onchange="location.href=this.value;" class="version-changer">
-      <option value="#">Version 1 (This one)</option>
-      <option value="v2.html">Version 2</option>
+      <option value="index.html">Version 1</option>
+      <option selected value="v2.html">Version 2 (This one)</option>
       <option value="v3.html">Version 3</option>
       <option value="v4.html">Version 4</option>
     </select>
