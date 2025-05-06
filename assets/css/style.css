@@ -264,6 +264,7 @@ article.course blockquote {
   margin-left: -1.85em;
   margin-top: -2.5em;
   margin-left: -2.35em;
+  position: relative;
 }
 
 .article-meta * {
@@ -272,6 +273,18 @@ article.course blockquote {
 
 .article-meta .slash {
   margin: 0 1em;
+}
+
+.article-meta .emojis {
+  position: absolute;
+  right: 0;
+  margin-right: -2.25em;
+  filter: grayscale(100%);
+  mix-blend-mode: multiply;
+  /* filter: blur(1px); */
+  pointer-events: none;
+  opacity: 0.9;
+  /* font-size: 1.5em; */
 }
 
 article.letter {
