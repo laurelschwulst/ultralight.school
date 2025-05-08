@@ -9,6 +9,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Normalschrift";
+  src: url("../fonts/normalschrift.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -16,6 +23,11 @@ body {
   letter-spacing: 0.01em;
   font-weight: normal;
   background: lemonchiffon;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  position: relative;
 }
 
 body {
@@ -74,7 +86,10 @@ iframe {
 
 iframe,
 img,
-nav#dropdown {
+nav#dropdown,
+nav#lateral,
+input,
+button {
   opacity: 0.9;
   mix-blend-mode: multiply;
   filter: grayscale(100%);
@@ -83,6 +98,11 @@ nav#dropdown {
 figure {
   margin: 0;
   margin: 1.5em 0;
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 0.5em;
 }
 
 img.color {
@@ -94,6 +114,24 @@ img.color:hover {
   filter: grayscale(0%);
 }
 
+img.normal {
+  filter: grayscale(0%);
+}
+
+.excerpt img.normal,
+.excerpt blockquote,
+.excerpt cite {
+  filter: grayscale(100%);
+  transition: 0.25s ease filter;
+  mix-blend-mode: multiply;
+}
+
+.excerpt:hover img.normal,
+.excerpt:hover blockquote,
+.excerpt:hover cite {
+  filter: grayscale(0%);
+}
+
 pre,
 code {
   font-family: "Waxwing", monospace;
@@ -101,7 +139,7 @@ code {
 
 footer {
   text-align: center;
-  margin-top: 25vh;
+  /* margin-top: 25vh; */
   padding-bottom: 5.5em;
   font-weight: normal;
 }
@@ -119,6 +157,18 @@ nav#dropdown select {
   /* -webkit-appearance: none;
   display: inline-block;
   width: 100%; */
+  margin: 0.5em;
+}
+
+nav#lateral,
+nav#buttons {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+nav#buttons button {
+  font-size: 1.25em;
   margin: 0.5em;
 }
 
@@ -150,6 +200,11 @@ figure#logo {
   margin: 3.65em auto 3.75em;
 }
 
+.regular-column {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
 /* EDIT: START */
 
 #grid a.button {
@@ -168,9 +223,10 @@ a.button {
   border-radius: 4px;
   font-weight: normal;
   cursor: pointer;
-  background: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   margin-bottom: 1em;
   border: 1px solid transparent;
+  transition: 0.25s ease background-color;
 }
 details[open] summary {
   background: transparent;
@@ -192,6 +248,140 @@ details[open] summary {
 }
 
 /* EDIT: END */
+
+/* ANNOUNCEMENTS: START */
+
+details.announcement {
+  margin-top: 1em;
+  max-width: 450px;
+  margin: 2em auto 0;
+  display: block;
+}
+
+details.announcement summary {
+  /* display: block; */
+  text-align: left;
+  /* padding: 1em; */
+  background: rgba(0, 0, 0, 0.05);
+  /* margin-bottom: 0; */
+  border-radius: 0;
+  /* border-radius: 35px; */
+  /* background: rgba(0, 0, 0, 0.05); */
+  /* box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.35); */
+}
+
+details.announcement summary:hover {
+  /* background-color: rgba(0, 0, 0, 0.15); */
+}
+
+details.announcement[open] summary {
+  background: rgba(0, 0, 0, 0.05);
+  border-color: transparent;
+}
+
+.announcement-itself {
+  text-align: left;
+  /* background: rgba(0, 0, 0, 0.05); */
+  border: 15px solid rgba(0, 0, 0, 0.05);
+  padding: 1.5em;
+  max-width: 450px;
+  margin: 0 auto;
+  position: relative;
+  /* font-family: "Waxwing";
+  line-height: 1.5; */
+}
+
+.announcement-itself p {
+  /* margin: 1.5em 0; */
+}
+
+.announcement-itself p:first-of-type {
+  margin-top: 0;
+}
+
+.announcement-itself p:last-of-type {
+  margin-bottom: 0;
+}
+
+blockquote {
+  margin-left: 0;
+}
+
+cite {
+  font-style: normal;
+}
+
+.permalink {
+  margin-top: 1em;
+  /* position: absolute;
+  bottom: 1em;
+  right: 1em; */
+}
+
+.permalink a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 4px 8px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+a.button-link {
+  display: inline-block;
+  padding: 1em;
+  border: none;
+  background: #eee;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+a.button-link:hover {
+  background: #ddd;
+}
+
+/* .excerpt {
+  background: rgba(0, 0, 0, 0.05);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.excerpt img {
+  display: block;
+} */
+/* .article-itself {
+  font-family: "Waxwing";
+  font-size: 20px;
+} */
+
+/* ANNOUNCEMENTS: END */
+
+/* CLASSES: START */
+
+.classes-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.individual-class {
+  margin: 1em auto 2.5em;
+  padding: 1.5em;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.35);
+  width: 100%;
+}
+
+.individual-class h3 {
+  font-size: 1.5em;
+  font-weight: normal;
+  margin: 0;
+  text-align: left;
+}
+
+/* CLASSES: END */
 
 article {
   margin: 1em auto 2.5em;
@@ -305,6 +495,15 @@ figure#twa {
   max-width: 1075px;
 }
 
+figure#twa.new {
+  max-width: 450px;
+  margin: 3.65em auto 3.75em;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 table.course {
   border-spacing: 0;
   border-collapse: collapse;
@@ -328,6 +527,112 @@ table.course td {
   padding: 0.6em 0.65em 0.5em;
 }
 
+input {
+  margin: 0.5em 0;
+  margin-right: 0.5em;
+  /* text-align: center; */
+}
+
+input,
+button,
+form {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  display: inline-block;
+}
+
+section#about {
+  max-width: 450px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+body.twa {
+  position: relative !important;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+
+/* Background image layer */
+body.twa #background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  /* background: url("../images/rainbow01.png") no-repeat center center;
+  background-size: cover; */
+  background: url("../images/rainbow03a.jpg");
+  background-size: cover;
+  z-index: 0;
+}
+
+/* Blur stays fixed over background */
+body.twa #blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 1;
+  pointer-events: none; /* so it doesn't block interactions */
+}
+
+/* Main content above blur */
+body.twa #everything {
+  position: relative;
+  z-index: 2;
+  padding: 7em 1.5em 7em;
+}
+
+body.class h2 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1em;
+}
+
+body.class ul:last-of-type {
+  margin-bottom: 0;
+}
+
+body.class figure {
+  margin: 5em 0;
+}
+
+body.home h2 {
+  /* text-transform: uppercase; */
+}
+
+/* body.twa #background {
+  background: url("../images/rainbow01.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body.twa #blur {
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+body.twa #everything {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  padding: 7em 1.5em 7em;
+} */
+
 /* mobile */
 
 @media screen and (max-width: 555px) {
@@ -350,5 +655,26 @@ table.course td {
   nav#dropdown select {
     display: block;
     width: calc(100vw - 1.25em);
+  }
+  nav#lateral,
+  nav#buttons {
+    position: absolute;
+    top: 2.5em;
+    left: 0.25em;
+    right: 0.25em;
+  }
+
+  nav#buttons button {
+    display: block;
+    width: calc(100vw - 1.25em);
+  }
+  .classes-container {
+    display: block;
+  }
+  .classes-container button,
+  .classes-container a.button-link {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5em;
   }
 }

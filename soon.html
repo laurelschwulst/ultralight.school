@@ -5,82 +5,38 @@
     <title>Ultralight School</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no" />
-    <meta property="og:image" content="" />
+    <link
+      rel="icon"
+      href="assets/images/lemonchiffon.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <style>
-      h2 {
-        font-size: 2em;
-        text-decoration: none;
-        font-weight: 300;
-        margin-bottom: 0;
-        padding-bottom: 1em;
-      }
-      .course-button {
-        aspect-ratio: 1 / 1;
-        background-color: rgba(0, 0, 0, 0.05);
-        border-radius: 12px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0.5em;
-        cursor: pointer;
-        transition: 0.35s ease background-color;
-      }
-      .course-button:hover,
-      .course-button.active {
-        background-color: rgba(0, 0, 0, 0.15);
-      }
-      #button-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 0.5em;
-        max-width: 450px;
-        margin: 0 auto;
-        margin-bottom: 2.5em;
-      }
-      .class-about {
-        display: none;
-        max-width: 450px;
-        margin: 0 auto;
-      }
-      .class-about.active {
-        display: block;
-      }
-      .class-buttons-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 0.5em;
-        margin: 1em 0;
-      }
-      a.class-button {
-        background-color: rgba(0, 0, 0, 0.15);
-        border-radius: 12px;
-        padding: 1em;
-        text-decoration: none;
-        border: 1px solid transparent;
-      }
-      h3 {
-        font-size: 1em;
-        font-weight: normal;
-      }
-      /* a.class-button:hover {
-        background-color: rgba(0, 0, 0, 0.15);
-        border-color: rgba(0, 0, 0, 1);
-      } */
-    </style>
   </head>
 
-  <body id="top">
+  <body id="top" class="home">
     <main>
       <h1>ultralight.school</h1>
-      <!-- <nav id="dropdown">
+      <nav id="dropdown">
         <select onchange="location.href=this.value;">
-          <option value="#top">Menu</option>
-          <option value="#classes">Classes</option>
-          <option value="#calendar">Calendar</option>
-          <option value="#announcements-and-letters">Announcements</option>
-          <option value="#contact">Contact</option>
+          <option value="index.html#top">ultralight.school</option>
+          <option value="index.html#classes">Classes</option>
+          <option value="classes/twa/v6.html">* TWA: Total Work of Art</option>
+          <option value="classes/sense-to-sense/index.html">
+            * Sense to Sense
+          </option>
+          <option value="classes/walking-the-internet/index.html">
+            * Walking the Internet
+          </option>
+          <option value="index.html#calendar">Calendar</option>
+          <option value="index.html#announcements-and-letters">
+            Announcements
+          </option>
+          <option value="index.html#contact">Contact</option>
         </select>
+      </nav>
+      <!-- <nav id="lateral">
+        <button>←</button>
+        <button>→</button>
       </nav> -->
       <figure id="logo">
         <?xml version="1.0" encoding="UTF-8"?><svg
@@ -128,79 +84,37 @@
       <div>SUMMER 2025</div>
       <section id="classes">
         <h2>Classes</h2>
-        <div id="button-grid">
-          <div class="course-button" data-class="twa">
-            TWA:<br />
-            Total Work of Art
+        <div class="classes-container">
+          <button onclick="location.href='classes/twa/v6.html'">
+            <h3 class="title">TWA: Total Work of Art</h3>
+          </button>
+          <button>
+            <h3 class="title">Sense to Sense</h3>
+          </button>
+          <button>
+            <h3 class="title">Walking the Internet</h3>
+          </button>
+          <!-- <div class="individual-class">
+            <h3 class="title">TWA: Total Work of Art</h3>
           </div>
-          <div class="course-button" data-class="sense-to-sense">
-            Sense to Sense
+          <div class="individual-class">
+            <h3 class="title">Sense to Sense</h3>
           </div>
-          <div class="course-button" data-class="walking-the-internet">
-            Walking the Internet
-          </div>
-        </div>
-
-        <div class="class-about twa">
-          <figure style="max-width: 450px; margin: 0 auto">
-            <?xml version="1.0" encoding="UTF-8"?>
-            <svg
-              id="Layer_1"
-              xmlns="http://www.w3.org/2000/svg"
-              version="1.1"
-              viewBox="0 0 309.3 100.7"
-            >
-              <!-- Generator: Adobe Illustrator 29.4.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 152)  -->
-              <defs>
-                <style>
-                  .st0 {
-                    fill: none;
-                    stroke: #000;
-                    stroke-miterlimit: 10;
-                    stroke-width: 0.75;
-                  }
-                </style>
-              </defs>
-              <path
-                class="st0"
-                d="M9.4.9L.7,30.8l28.8.5L7.7,99.8l36.3-.2,21.9-68.7,22.6.5L99,.9H9.4Z"
-              />
-              <path
-                class="st0"
-                d="M101,.7l.8,98.7,33.2.2,24.4-44.2,1,44.2h30L244.8.7l-37.1.2-20.4,40.3.4-40.1h-31.3l-22.9,42.3.2-42.5-32.8-.2h0Z"
-              />
-              <path
-                class="st0"
-                d="M308.8.5l-53.4.8-52.4,98.3,35.5.6,8.8-16.7,28.8-.2v16.9h32.6V.5ZM275.6,29.7l-.6,30.4h-15.9c0,0,0,.2,0,.2v-.2h0c.8-2.2,16.4-30.4,16.4-30.4h0Z"
-              />
-            </svg>
-          </figure>
-          <!-- <h3>TWA: Total Work of Art</h3> -->
-          <div class="class-buttons-container">
-            <a href="#" class="class-button">More info</a>
-            <a href="#" class="class-button">Application coming soon</a>
-          </div>
-          <!-- <p>
-              ( 7 Weeks: June 15, June 20, June 22, June 27, June 28, July 6,
-              July 11, July 13, July 18, July 20, July 25, July 27, August 1,
-              August 3 )
-            </p>
-            <p>( NYC )</p>
-            <p>( By Stephen Kwok, Laurel Schwulst, & Bryant Wells )</p>
-
-            <div class="class-buttons">
-              <a href="classes/twa/v5.html" class="button">More info</a>
-              <a href="#" class="button inactive">Application coming soon</a>
-            </div> -->
-        </div>
-        <div class="class-about sense-to-sense">sense-to-sense about here</div>
-        <div class="class-about walking-the-internet">
-          walking the internet about here
+          <div class="individual-class">
+            <h3 class="title">Walking the Internet</h3>
+          </div> -->
         </div>
       </section>
-
       <section id="calendar">
         <h2>Calendar</h2>
+        <!-- <iframe
+          src="https://calendar.google.com/calendar/embed?src=0057b4d3e020a4327daba02adc74ed87c13e64ea397ed37dbda533cf0fffccac%40group.calendar.google.com&ctz=America%2FNew_York"
+          style="border: 0"
+          width="100%"
+          height="100%"
+          frameborder="0"
+          scrolling="no"
+        ></iframe> -->
         <iframe
           src="https://calendar.google.com/calendar/embed?src=896c39aa11bf441af4d932c1b02aed654ae7dc45b7ef58353e166b92fc295177%40group.calendar.google.com&ctz=America%2FNew_York"
           style="border: 0"
@@ -212,105 +126,228 @@
       </section>
       <section id="announcements-and-letters">
         <h2>Announcements</h2>
-        <article class="letter wide">
-          <div class="article-meta">
-            <date>Friday, May 9, 2025</date>
-            <div class="slash">/</div>
-            <div class="title">Announcing “TWA”</div>
-            <!-- <div class="emojis">🌎 🌍 🌏</div> -->
-          </div>
-          <p>Hi everyone,</p>
-          <p>We’re excited to launch our class called “TWA” —</p>
-          <p>
-            In “<a href="#">TWA: Total Work of Art</a>,” we invite artists,
-            designers, writers, programmers, and anyone else interested to
-            shapeshift their concept across three modalities: 1) digital, 2)
-            physical, and 3) temporal. Inspired by wide-ranging examples of
-            design as world-building — think Bauhaus, Beyoncé, Bernadette
-            Corporation — this workshop responds to how culture is experienced
-            today, inviting participants to develop a core concept across
-            multiple forms and points of access.
-          </p>
-          <p>
-            This 7 week course is led by us, three teachers: Stephen Kwok,
-            Laurel Schwulst, and Bryant Wells. Meeting twice a week (on
-            Thursdays and Sundays) in-person in Brooklyn, each session includes
-            conversational lectures, technical demonstrations, presentation and
-            critique time, and guest visits. The course culminates in a public
-            event in which the participants present the totality of their work.
-          </p>
-          <p>
-            We’re launching the class under “<a href="#">Ultralight School</a>,”
-            a new educational umbrella, beginning this summer. It’s a natural
-            continuation of Laurel’s previous “Fruitful School” with a related
-            ethos but new summertime levity 🍃
-          </p>
-          <p>
-            We invite you to apply to TWA <a href="#">here</a>. Applications are
-            due 11:59pm EST on May 30, 2025.
-          </p>
-          <p>Write us twa@ultralight.school if you have any questions.</p>
-          <p>Looking forward to seeing you this summer!</p>
+        <div>
+          To receive these in your inbox, sign up here:
+          <form
+            class="js-cm-form"
+            id="subForm"
+            action="https://www.createsend.com/t/subscribeerror?description="
+            method="post"
+            data-id="191722FC90141D02184CB1B62AB3DC26FA15625C50F86DB461032FAD1DFB91D291DB471E005CCDD127613B862F227D236D66FB167E5613E6EA72F3A9CDE09BE6"
+          >
+            <input
+              autocomplete="Email"
+              class="js-cm-email-input qa-input-email"
+              id="fieldEmail"
+              maxlength="200"
+              name="cm-tjitdri-tjitdri"
+              required=""
+              type="email"
+              placeholder="Your email here"
+            /><button type="submit">Subscribe</button>
+          </form>
+        </div>
+        <script
+          type="text/javascript"
+          src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"
+        ></script>
+        <details class="announcement" open>
+          <summary>May 9, 2025 — Announcing Ultralight School</summary>
+          <div class="announcement-itself">
+            <p>Hi everyone,</p>
 
-          Stephen Kwok, Laurel Schwulst, & Bryant Wells
-        </article>
-        <article class="letter wide">
-          <div class="article-meta">
-            <date>Friday, May 9, 2025</date>
-            <div class="slash">/</div>
-            <div class="title">Announcing Ultralight School</div>
+            <p>
+              This summer 2025, beginning in June, we are hosting a few exciting
+              classes based physically in NYC!
+            </p>
+            <p>
+              This is happening under a new educational umbrella project called
+              “<a href="https://ultralight.school">ultralight.school</a>” —
+              which we will share more about momentarily; but first, the
+              classes:
+            </p>
+            <p>***</p>
+            <p>Our summer 2025 classes:</p>
+            <p>
+              <b>TWA: Total Work of Art</b> — In this 7 week class, meeting on
+              Thursday evenings and Sunday afternoons in June, July, and part of
+              August, participants come in with one core concept and shapeshift
+              it through multiple modalities: 1) digital, 2) physical, and 3)
+              temporal. Inspired by wide-ranging examples of design as
+              world-building — think Bauhaus, Beyoncé, Bernadette Corporation —
+              this class responds to how culture is experienced today, inviting
+              participants to develop a core concept across multiple forms,
+              points, and moments of access. This class is taught by Bryant
+              Wells, Stephen Kwok, and Laurel Schwulst and hosted at telos.haus
+              in East Williamsburg, Brooklyn.
+            </p>
+            <p>
+              <b>Sense to Sense</b> — In this 5 week class, meeting on Sunday
+              evenings and Monday evenings in June and July, participants
+              explore translation and the senses through readings, exercises,
+              and a final group publication. We’ll engage in readings and
+              discussion about the five senses and what it means to carry
+              sensations over into written form. How can a fragrance become a
+              poem? What are the different ways to write an image, or to
+              document a sound? This class is taught by Meg Miller and Laurel
+              Schwulst and hosted in Boerum Hill, Brooklyn.
+            </p>
+            <p>
+              <b>Walking the Internet</b> — In this 3 week class, we will meet
+              three consecutive Saturday afternooons in July to explore physical
+              infrastructure in New York City. How does one “see” the internet,
+              anyway? We will explore how the internet is not some ethereal,
+              untouchable thing, but physically rooted — connected by underwater
+              submarine cables and served from data centers containing many
+              literal computers worldwide. This class is taught by Alex Wolfe
+              and Laurel Schwulst and takes place in different places in
+              Manhattan each week.
+            </p>
+            <p>
+              <i>Stay tuned in next days for more info and how to apply.</i>
+            </p>
+            <p>***</p>
+
+            <p>So what is Ultralight School, anyway?</p>
+            <p>We keep returning to this quote:</p>
+            <div class="excerpt">
+              <img
+                src="assets/images/strawberry.jpg"
+                alt="strawberry sliced very thinly so light shines through"
+                width="150"
+                class="normal"
+              />
+              <blockquote>
+                <i style="background: #ffccc0"
+                  >“The finer I slice the strawberries, the more surfaces there
+                  are; the more surfaces there are, the more it tastes.”</i
+                >
+              </blockquote>
+              <cite
+                >—
+                <!-- <span style="background: rgba(0, 0, 0, 0.1)"
+                  > -->
+                <span>
+                  Christopher Alexander,
+                  <i>A Timeless Way of Building</i></span
+                ></cite
+              >
+            </div>
+            <p>
+              Speaking of strawberries, Ultralight School is a next evolution of
+              <a href="https://fruitful.school">Fruitful School</a> (2020–24),
+              which explored how contemporary artistic practices engaged with
+              the world wide web or technology at large.
+            </p>
+            <p>
+              Initiated by Laurel Schwulst,
+              <a href="https://ultralight.school">Ultralight School</a> (2025–)
+              took root in Laurel’s research around the word “<a
+                href="https://www.youtube.com/watch?v=nTJCPEkQ2RE"
+                >ultralight</a
+              >” — including various
+              <a href="https://fruitful.school/workshops/ultralight/"
+                >workshops</a
+              >
+              — and what lightness means from both literal and literary points
+              of view.
+            </p>
+            <p>* * *</p>
+            <!-- <p>Ultralight is a word that means extremely lightweight.</p>
+            <p>
+              The prefix “ultra-” can mean “very” or “extremely.” But It also
+              mean “on the other side of” or “beyond.” For example, the word
+              “ultraviolet” means “light beyond the visible spectrum.”
+            </p>
+            <p>
+              In the word “ultralight,” the suffix “-light” refers to weight.
+              For instance, the word ultralight is shorthand for a lightweight
+              aircraft. Ultralight also describes a genre of lightweight
+              backpacking equipment which ideally makes your journey less
+              burdensome. When taken from a less literal, maybe more literary,
+              vantage, lightness can also be about seeing the world in a new
+              way:
+            </p> -->
+            <p>
+              <b>Ultralight</b> — Ultralight is a word that means extremely
+              lightweight.
+            </p>
+            <p>
+              <b>Ultra</b> — The prefix “ultra-” can mean “very” or “extremely.”
+              But It also mean “on the other side of” or “beyond.” For example,
+              the word “ultraviolet” means “light beyond the visible spectrum.”
+            </p>
+            <p>
+              <b>Light</b> — In the word “ultralight,” the suffix “-light”
+              refers to weight. For instance, the word ultralight is shorthand
+              for a lightweight aircraft. Ultralight also describes a genre of
+              lightweight backpacking equipment which ideally makes your journey
+              less burdensome. When taken from a less literal, maybe more
+              literary, vantage, lightness can be about seeing the world in a
+              new way:
+            </p>
+            <div class="excerpt">
+              <img
+                src="assets/images/clouds.jpg"
+                alt="various white whispy clouds on a blue sky"
+                class="normal"
+                width="200"
+              />
+              <blockquote>
+                <i style="background: lightcyan"
+                  >“Whenever humanity seems condemned to heaviness, I think I
+                  should fly like Perseus into a different space. I don’t mean
+                  escaping into dreams or into the irrational. I mean that I
+                  have to change my approach, look at the world from a different
+                  perspective, with a different logic and with fresh methods of
+                  cognition and verification...”</i
+                >
+              </blockquote>
+              <cite
+                >—
+                <!-- <span style="background: rgb(168, 214, 255)"
+                  > -->
+                <span>
+                  Italo Calvino, <i>Six Memos for the Next Milennium</i></span
+                ></cite
+              >
+            </div>
+            <p>
+              This is not to say that heaviness does not also have its merits.
+              Life is about balance — light is only possible because of heavy,
+              and vice versa.
+            </p>
+            <p>* * *</p>
+            <p>
+              Ultralight School’s symbol is a sunbeam emanating in all
+              directions from an invisible house. This is a beginning. We
+              welcome you to apply!
+            </p>
+            <p>See you this summer,</p>
+            <p>
+              Laurel Schwulst<br />
+              <a href="https://ultralight.school">ultralight.school</a>
+            </p>
           </div>
-          Dear everyone,<br /><br />
-          This summer 2025, beginning in June, we are hosting a few exciting
-          classes based in NYC. It’s happening under a new educational umbrella
-          project called “ultralight.school” —<br /><br />
-          TKTK<br /><br />
-          Laurel
-        </article>
+          <div class="permalink">
+            <a href="announcements/2025-05-09.html">Permalink</a>
+          </div>
+        </details>
       </section>
       <section id="contact">
         <h2>Contact</h2>
-        <!-- Coming soon -->
         mail@ultralight.school<br /><br />
-        <!-- <a href="#" target="_blank" class="coming-soon">Newsletter</a
+        <a href="https://www.are.na/ultralight-school/all" target="_blank"
+          >Are.na</a
         ><br /><br />
-        <a href="#" target="_blank" class="coming-soon">Are.na</a><br /><br />
         <a href="https://www.instagram.com/library_of_light" target="_blank"
           >IG</a
-        > -->
+        >
       </section>
-      <!-- <footer>“quote quote quote”</footer> -->
-      <!-- even a sheet of paper is lighter when lifted together -->
+      <footer></footer>
+      <!-- “even a sheet of paper is lighter when lifted together” -->
     </main>
 
     <!-- <script src="assets/js/script.js"></script> -->
-    <script>
-      const buttons = document.querySelectorAll(".course-button");
-      const aboutSections = document.querySelectorAll(".class-about");
-
-      buttons.forEach((button) => {
-        button.addEventListener("click", () => {
-          const targetClass = button.getAttribute("data-class");
-          const targetSection = document.querySelector(
-            `.class-about.${targetClass}`
-          );
-          const isActive = targetSection.classList.contains("active");
-
-          // Hide all about sections
-          aboutSections.forEach((section) =>
-            section.classList.remove("active")
-          );
-
-          // Remove active class from all buttons
-          buttons.forEach((btn) => btn.classList.remove("active"));
-
-          if (!isActive) {
-            // Show target section and highlight button
-            targetSection.classList.add("active");
-            button.classList.add("active");
-          }
-        });
-      });
-    </script>
   </body>
 </html>
