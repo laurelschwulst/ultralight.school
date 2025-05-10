@@ -157,6 +157,11 @@ footer .email {
   margin-bottom: 8em;
 }
 
+figure#small-logo {
+  max-width: 250px;
+  margin: 3.65em auto 3.75em;
+}
+
 /* NAVIGATION */
 
 nav#dropdown {
@@ -286,7 +291,7 @@ article {
 
 article .content {
   font-weight: 300;
-  padding: 0.95em 1.1em;
+  padding: 0.95em 1.1em 0;
 }
 
 article .meta {
