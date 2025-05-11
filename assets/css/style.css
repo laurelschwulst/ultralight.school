@@ -464,7 +464,6 @@ article.wide {
 
 /* CLASS */
 
-body.class h1,
 body.class h2 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 25px;
@@ -472,7 +471,6 @@ body.class h2 {
   font-weight: 300;
   margin: 0;
 }
-
 /* body.class h1 {
   margin-top: 2.25em;
 }
@@ -487,20 +485,31 @@ body.class table {
   margin: 4em 0;
 }
 
+body.class article h1 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  line-height: 1.4;
+  font-weight: 300;
+  margin: 0;
+}
+
 body.class article h1,
 body.class article h2 {
   letter-spacing: 0;
   margin-top: 2em;
-  font-weight: bold;
+  /* font-weight: bold; */
+}
+
+body.class article h2 {
+  margin-top: 0;
 }
 
 body.class article h3 {
-  letter-spacing: 0;
-  text-transform: none;
-  margin: 0;
-  margin-top: 2em;
-  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
   display: inline-block;
+  margin: 1em auto 2em;
+  padding: 1em;
 }
 
 body.class article h1.title {
@@ -542,11 +551,11 @@ body.class figcaption {
 
 html.twa,
 body.twa {
-  background: #a5a29a;
+  /* background: #a5a29a; */
 }
 
 body.twa article {
-  background: transparent;
+  /* background: transparent; */
 }
 
 body.twa figure#logo {
