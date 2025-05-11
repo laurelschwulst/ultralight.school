@@ -74,6 +74,24 @@ figure {
   margin: 1.5em 0;
 }
 
+figure.small {
+  max-width: 350px;
+}
+
+figure.medium {
+  max-width: 550px;
+}
+
+figure.float {
+  float: left;
+  margin-right: 1em;
+}
+
+figure.float.small {
+  width: 325px;
+  margin-right: 1em;
+}
+
 figcaption {
   text-align: center;
   margin-top: 0.5em;
@@ -95,6 +113,9 @@ img.normal {
   filter: grayscale(0%);
 }
 
+img.noblend {
+  mix-blend-mode: normal;
+}
 /* TEXT STYLES */
 
 h1,
@@ -122,7 +143,9 @@ h4 {
 pre,
 code,
 .monospace,
-.person {
+.person,
+body.class table,
+body.class figcaption {
   font-family: "Courier New", Courier, monospace;
   font-size: 15px;
 }
@@ -162,6 +185,10 @@ footer .email {
   margin-bottom: 8em;
 }
 
+footer .link {
+  margin-bottom: 8em;
+}
+
 figure#small-logo {
   max-width: 375px;
   margin: 3.65em auto 3.75em;
@@ -173,13 +200,47 @@ nav#dropdown {
   position: absolute;
   top: 1em;
   left: 1em;
+  /* right: 1em; */
   z-index: 5;
 }
 
 nav#dropdown select {
-  font-size: 1.25em;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  margin: 0.5em;
+  /* font-size: 1.25em;
+  margin: 0.5em; */
+  /* max-width: 850px;
+  margin: 0 auto; */
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 35px;
+  padding: 0.5em;
+  cursor: pointer;
+  transition: 0.35s ease background-color;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.25);
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.025em;
+  text-align: center;
+  /* font-weight: 300; */
+  position: relative;
+}
+
+nav#dropdown select:hover {
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 nav#apply {
@@ -212,7 +273,7 @@ nav#apply button {
   cursor: pointer;
   transition: 0.35s ease background-color;
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.25);
-  font-family: "Helvetica Neue";
+  font-family: "Helvetica Neue", sans-serif;
   font-size: 25px;
   line-height: 1.4;
   font-weight: 300;
@@ -315,10 +376,15 @@ article .meta .slash {
   margin: 0 1em;
 }
 
-article .meta .author {
+article .meta .author,
+article .meta .date {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+article.wide {
+  max-width: 1000px;
 }
 
 .excerpt {
@@ -394,6 +460,127 @@ article .meta .author {
   text-transform: uppercase;
   margin: 0 0.15em;
   display: none;
+}
+
+/* CLASS */
+
+body.class h1,
+body.class h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  line-height: 1.4;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* body.class h1 {
+  margin-top: 2.25em;
+}
+
+body.class h2 {
+  margin-bottom: 2.25em;
+} */
+
+body.class table {
+  border-collapse: collapse;
+  text-transform: uppercase;
+  margin: 4em 0;
+}
+
+body.class article h1,
+body.class article h2 {
+  letter-spacing: 0;
+  margin-top: 2em;
+  font-weight: bold;
+}
+
+body.class article h3 {
+  letter-spacing: 0;
+  text-transform: none;
+  margin: 0;
+  margin-top: 2em;
+  font-weight: bold;
+  display: inline-block;
+}
+
+body.class article h1.title {
+  margin: 0;
+}
+
+body.class article h2.subtitle {
+  margin-top: 0;
+}
+
+body.class table tr,
+body.class table td {
+  border: 1px solid black;
+  padding: 0.5em;
+}
+
+body.class blockquote {
+  padding-left: 2.5em;
+}
+
+body.class blockquote {
+  border-left: 1px solid rgba(0, 0, 0, 0.15);
+  font-style: italic;
+  margin: 1.5em 0;
+}
+
+body.class img {
+  filter: grayscale(0%);
+  opacity: 1;
+  mix-blend-mode: normal;
+}
+
+body.class figcaption {
+  font-weight: normal;
+  text-align: left;
+}
+
+/* TWA: TOTAL WORK OF ART */
+
+html.twa,
+body.twa {
+  background: #a5a29a;
+}
+
+body.twa article {
+  background: transparent;
+}
+
+body.twa figure#logo {
+  max-width: 1250px;
+}
+
+.rainbow {
+  --angle: 0deg;
+  padding: 2px 4px;
+  border: 1px solid;
+  border-image: conic-gradient(
+      from var(--angle),
+      red,
+      yellow,
+      lime,
+      aqua,
+      blue,
+      magenta,
+      red
+    )
+    1;
+  animation: 5s rotate linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
 
 /* MOBILE */
