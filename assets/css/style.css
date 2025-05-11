@@ -464,12 +464,46 @@ article.wide {
 
 /* CLASS */
 
+.moving-letter {
+  position: absolute;
+  top: 90vh;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
 body.class h2 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 25px;
   line-height: 1.4;
   font-weight: 300;
   margin: 0;
+}
+
+.class-header {
+  position: relative;
+}
+
+.class-header a.button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+body.class a.button {
+  /* border: 1px solid rgba(0, 0, 0, 0.35); */
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  font-weight: normal;
+  padding: 0.35em 1em 0.45em;
+  /* border-radius: 16px; */
+  transition: 0.25s ease all;
+}
+
+body.class a.button:hover {
+  background: rgba(0, 0, 0, 0.05);
 }
 /* body.class h1 {
   margin-top: 2.25em;
@@ -483,6 +517,20 @@ body.class table {
   border-collapse: collapse;
   text-transform: uppercase;
   margin: 4em 0;
+  line-height: 1.25;
+}
+
+body.class table ul.small {
+  margin-left: 0;
+  padding-left: 1.25em;
+}
+
+body.class table ul.small li {
+  padding-left: 0.5em;
+}
+
+body.class table ul.small ul {
+  padding-left: 1.25em;
 }
 
 body.class article h1 {
@@ -547,6 +595,14 @@ body.class figcaption {
   text-align: left;
 }
 
+body.class figcaption {
+  text-align: center;
+}
+
+body.class figure {
+  margin: 2em 0;
+}
+
 /* TWA: TOTAL WORK OF ART */
 
 html.twa,
@@ -560,12 +616,35 @@ body.twa article {
 
 body.twa figure#logo {
   max-width: 1250px;
+  padding: 0 1em;
+}
+
+h2.rainbow-underline {
+  display: inline-block;
 }
 
 .rainbow {
   --angle: 0deg;
   padding: 2px 4px;
   border: 1px solid;
+  border-image: conic-gradient(
+      from var(--angle),
+      red,
+      yellow,
+      lime,
+      aqua,
+      blue,
+      magenta,
+      red
+    )
+    1;
+  animation: 5s rotate linear infinite;
+}
+
+.rainbow-underline {
+  --angle: 0deg;
+  padding-bottom: 1px;
+  border-bottom: 1px solid;
   border-image: conic-gradient(
       from var(--angle),
       red,
@@ -616,6 +695,13 @@ body.twa figure#logo {
   /* .people {
     margin-top: 1em;
   } */
+  .moving-letter {
+    top: 75vh;
+  }
+  .class-header,
+  .class-header a.button {
+    position: static;
+  }
 }
 
 @media screen and (max-width: 775px) {
@@ -629,6 +715,9 @@ body.twa figure#logo {
 }
 
 @media screen and (max-width: 555px) {
+  .moving-letter {
+    top: 65vh;
+  }
   body {
     padding: 4.25em 1.5em;
   }
