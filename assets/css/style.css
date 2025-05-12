@@ -231,6 +231,10 @@ figure#small-logo {
   margin: 3.65em auto 3.75em;
 }
 
+footer.class-footer {
+  height: 100vh;
+}
+
 /* NAVIGATION */
 
 nav#dropdown {
@@ -820,6 +824,11 @@ a.button.rainbow {
   .moving-letter {
     top: 75vh;
   }
+  body,
+  .moving-letter {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
   .class-header,
   .class-header a.button {
     position: static;
@@ -928,6 +937,14 @@ a.button.rainbow {
     margin-left: -1.15em;
     margin-right: -1.15em;
   }
+  body.class article figure.nostretch-mobile {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  body.class article figure.nosolar-mobile {
+    filter: grayscale(0%);
+    mix-blend-mode: multiply;
+  }
   body.class article figcaption {
     margin-left: 1em;
     margin-right: 1em;
@@ -937,5 +954,8 @@ a.button.rainbow {
   }
   body.class article .content ul {
     padding-left: 1.25em;
+  }
+  footer.class-footer {
+    height: 0.25em;
   }
 }
