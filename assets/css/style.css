@@ -702,6 +702,9 @@ h2.rainbow-underline {
   .class-header a.button {
     position: static;
   }
+  .class-header a.button {
+    margin-top: 1em;
+  }
 }
 
 @media screen and (max-width: 775px) {
