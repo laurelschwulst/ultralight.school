@@ -235,6 +235,10 @@ footer.class-footer {
   height: 100vh;
 }
 
+footer.transmission-outro {
+  margin-top: 5em;
+}
+
 /* NAVIGATION */
 
 nav#dropdown {
@@ -535,11 +539,30 @@ article.wide {
 }
 
 header.fixed {
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 7em 0; */
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  margin: 7em 0;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 7em 5em 2.75em;
+}
+
+header.fixed h1,
+header.fixed h2,
+header.fixed h3 {
+  margin: 0 !important;
+}
+
+header.fixed h1 {
+  padding-top: 0.65em;
 }
 
 body.class h2 {
@@ -730,8 +753,24 @@ body.twa article {
 }
 
 body.twa figure#logo {
-  max-width: 1250px;
-  padding: 0 1em;
+  /* max-width: 1250px;
+  padding: 0 1em; */
+  max-width: 100%;
+  padding: 1em 10em;
+  width: 100%;
+  margin: 0;
+  position: relative;
+  flex: 1;
+}
+
+body.twa figure#logo svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 3.25em 0;
 }
 
 h2.rainbow-underline {
@@ -821,6 +860,9 @@ a.button.rainbow {
   /* .people {
     margin-top: 1em;
   } */
+  header.fixed {
+    height: 75vh;
+  }
   .moving-letter {
     top: 75vh;
   }
@@ -878,15 +920,16 @@ a.button.rainbow {
     display: block;
     margin-bottom: 0.5em;
   }
+  header.fixed {
+    height: 65vh;
+    padding: 4.25em 1em;
+  }
   .moving-letter {
     top: 65vh;
     padding: 0 1em;
   }
   body {
     padding: 4.25em 1em;
-  }
-  header.fixed {
-    margin: 4.25em 1em;
   }
   iframe {
     height: 60vh;
