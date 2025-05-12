@@ -95,6 +95,11 @@ figure.float.small {
 figcaption {
   text-align: center;
   margin-top: 0.5em;
+  line-height: 1.3;
+}
+
+figcaption .quote {
+  margin-top: 0.75em;
 }
 
 /* SOLAR STYLES */
@@ -109,6 +114,12 @@ button {
   filter: grayscale(100%);
 }
 
+img.solar {
+  opacity: 0.9 !important;
+  mix-blend-mode: multiply !important;
+  filter: grayscale(100%) !important;
+}
+/* https://www.museoreinasofia.es/en/exhibitions/david-hammons-global-fax-festival */
 img.normal {
   filter: grayscale(0%);
 }
@@ -145,6 +156,7 @@ code,
 .monospace,
 .person,
 body.class table,
+body.class .class-table,
 body.class figcaption {
   font-family: "Courier New", Courier, monospace;
   font-size: 15px;
@@ -164,6 +176,24 @@ blockquote {
 
 cite {
   font-style: normal;
+}
+
+ul.keywords {
+  padding-left: 1em;
+}
+
+ul.keywords li {
+  padding-left: 0.25em;
+}
+
+.question {
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+  font-weight: normal;
+  text-transform: lowercase;
+  text-align: center;
+  margin-top: 2.5em;
 }
 
 /* HEADER */
@@ -266,7 +296,7 @@ nav#apply button {
 }
 
 .class-button {
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 8.5 / 11;
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 35px;
   padding: 0.5em;
@@ -282,10 +312,16 @@ nav#apply button {
 
 .class-button.inactive {
   cursor: auto;
+  background-color: transparent;
 }
 
 .class-button.inactive:hover {
   background-color: rgba(0, 0, 0, 0.05);
+  background-color: transparent;
+}
+
+a.class-button {
+  text-decoration: none;
 }
 
 .class-button .title {
@@ -340,6 +376,21 @@ nav#apply button {
   background-color: rgba(0, 0, 0, 0.15);
 }
 
+.class-class-buttons {
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+}
+
+.class-class-buttons a {
+  text-decoration: none;
+  border: 1px solid transparent;
+  padding: 0.5em 1em 0.6em;
+  /* background: rgba(0, 0, 0, 0.1); */
+  transition: 0.25s ease all;
+}
+.class-class-buttons a:hover {
+  /* background: rgba(0, 0, 0, 0.15); */
+}
 /* ANNOUNCEMENTS */
 
 article {
@@ -472,6 +523,14 @@ article.wide {
   z-index: 2;
 }
 
+header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 7em 0;
+}
+
 body.class h2 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 25px;
@@ -497,13 +556,22 @@ body.class a.button {
   font-size: 14px;
   letter-spacing: 0.01em;
   font-weight: normal;
-  padding: 0.35em 1em 0.45em;
+  padding: 0.5em 1em 0.6em;
   /* border-radius: 16px; */
+  border-radius: 0;
   transition: 0.25s ease all;
 }
 
 body.class a.button:hover {
   background: rgba(0, 0, 0, 0.05);
+  border-radius: 0;
+}
+
+body.class a.button.large {
+  font-size: 25px;
+  font-weight: 300;
+  display: block;
+  text-align: center;
 }
 /* body.class h1 {
   margin-top: 2.25em;
@@ -513,6 +581,28 @@ body.class h2 {
   margin-bottom: 2.25em;
 } */
 
+body.class .class-table {
+  border: 1px solid black;
+  text-transform: uppercase;
+}
+
+body.class .class-table .row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background: black;
+  grid-gap: 1px;
+}
+
+body.class .class-table .column {
+  background: #f2edc3;
+  padding: 0.5em;
+  border-bottom: 1px solid black;
+}
+
+body.class .class-table .row:last-of-type .column {
+  border-bottom: 0;
+}
+
 body.class table {
   border-collapse: collapse;
   text-transform: uppercase;
@@ -520,16 +610,19 @@ body.class table {
   line-height: 1.25;
 }
 
-body.class table ul.small {
+body.class table ul.small,
+body.class .class-table ul.small {
   margin-left: 0;
   padding-left: 1.25em;
 }
 
-body.class table ul.small li {
+body.class table ul.small li,
+body.class .class-table ul.small li {
   padding-left: 0.5em;
 }
 
-body.class table ul.small ul {
+body.class table ul.small ul,
+body.class .class-table ul.small ul {
   padding-left: 1.25em;
 }
 
@@ -553,12 +646,23 @@ body.class article h2 {
 }
 
 body.class article h3 {
+  text-transform: none;
+  font-weight: 300;
+  margin: 0;
+  margin-top: 1em;
+}
+
+/* body.class article h3 {
   font-size: 14px;
   text-align: center;
   display: inline-block;
   margin: 1em auto 2em;
   padding: 1em;
 }
+
+body.class article h3.rainbow {
+  display: block;
+} */
 
 body.class article h1.title {
   margin: 0;
@@ -621,6 +725,7 @@ body.twa figure#logo {
 
 h2.rainbow-underline {
   display: inline-block;
+  margin-top: 1.25em !important;
 }
 
 .rainbow {
@@ -671,16 +776,26 @@ h2.rainbow-underline {
   inherits: false;
 }
 
+a.button.rainbow {
+  border-radius: 0;
+}
+
+.not-mobile {
+  display: block;
+}
+
 /* MOBILE */
 
 @media screen and (max-width: 900px) {
   .button-grid {
     grid-template-columns: 1fr;
   }
-  a.class-button {
+  .class-button {
     aspect-ratio: auto;
-    height: 9em;
+    height: 10.5em;
   }
+  /* .class-class-buttons a {
+  } */
   .class-button .symbol,
   .class-button .title,
   .class-button .more-info {
@@ -708,9 +823,11 @@ h2.rainbow-underline {
 }
 
 @media screen and (max-width: 775px) {
-  article {
-    font-size: 21px;
+  article,
+  body.class article h2 {
+    font-size: 18px;
     letter-spacing: 0.025em;
+    line-height: 1.3;
   }
   article .content {
     padding: 0.5em 0 0;
@@ -718,14 +835,50 @@ h2.rainbow-underline {
 }
 
 @media screen and (max-width: 555px) {
+  body.class table td,
+  body.class table tr {
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    font-size: 11px;
+  }
+  body.class table tr {
+    margin-bottom: -1px;
+  }
+  body.class .class-table {
+    border: 0;
+    text-transform: none;
+  }
+  body.class .class-table .row {
+    display: block;
+    background: transparent;
+    margin-bottom: 1.5em;
+  }
+  body.class .class-table .column {
+    padding: 0;
+    border: 0;
+  }
+  body.class .class-table .column.left {
+    border-bottom: 1px solid black;
+    /* text-decoration: underline; */
+    display: block;
+    margin-bottom: 0.5em;
+  }
   .moving-letter {
     top: 65vh;
+    padding: 0 1em;
   }
   body {
-    padding: 4.25em 1.5em;
+    padding: 4.25em 1em;
+  }
+  header.fixed {
+    margin: 4.25em 1em;
   }
   iframe {
     height: 60vh;
+  }
+  .excerpt img.normal,
+  .excerpt blockquote,
+  .excerpt cite {
+    filter: grayscale(0%);
   }
   .excerpt {
     display: block;
@@ -756,5 +909,26 @@ h2.rainbow-underline {
   nav#apply button {
     display: block;
     width: calc(100vw - 1.25em);
+  }
+  body.class article h2.subtitle {
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0.01em;
+    margin-top: 0.25em;
+    margin-bottom: 0.5em;
+  }
+  body.class article figure {
+    margin-left: -1.15em;
+    margin-right: -1.15em;
+  }
+  body.class article figcaption {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  body.class table {
+    margin: 2em 0 4em;
+  }
+  body.class article .content ul {
+    padding-left: 1.25em;
   }
 }
