@@ -886,7 +886,10 @@ a.button.rainbow {
   }
   .class-button {
     aspect-ratio: auto;
-    height: 8em;
+    height: 10em;
+  }
+  .class-button .symbol {
+    padding-top: 0.5em;
   }
   /* .class-class-buttons a {
   } */
