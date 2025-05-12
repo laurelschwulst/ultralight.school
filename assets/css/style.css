@@ -196,6 +196,13 @@ ul.keywords li {
   margin-top: 2.5em;
 }
 
+article .content .small-text {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  font-weight: normal;
+}
+
 /* HEADER */
 
 figure#logo {
