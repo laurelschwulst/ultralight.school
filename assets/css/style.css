@@ -316,7 +316,8 @@ nav#apply button {
 }
 
 .class-button {
-  aspect-ratio: 8.5 / 11;
+  /* aspect-ratio: 8.5 / 11; */
+  aspect-ratio: 1 / 1;
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 35px;
   padding: 0.5em;
@@ -330,9 +331,16 @@ nav#apply button {
   position: relative;
 }
 
-.class-button.inactive {
+a.class-button.inactive {
   cursor: auto;
   background-color: transparent;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+svg path {
+  stroke: currentColor !important;
+  /* stroke: rgba(0, 0, 0, 0.6) !important; */
 }
 
 .class-button.inactive:hover {
@@ -342,47 +350,41 @@ nav#apply button {
 
 a.class-button {
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0.75em;
+  padding-bottom: 0.85em;
 }
 
 .class-button .title {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0.025em;
 }
 
 .class-button .more-info {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 1em;
-  padding-bottom: 1.25em;
   font-size: 14px;
+  letter-spacing: 0.025em;
   font-weight: normal;
   text-transform: lowercase;
 }
 
 .class-button .symbol {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 1em;
-  max-height: 50%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .class-button .symbol img {
-  height: 2.5em;
+  /* height: 2.5em; */
+  width: 100%;
+  height: 100%;
 }
 
 .class-button .symbol figure,
 .class-button .symbol figure svg {
-  height: 2.5em;
+  /* height: 2.5em; */
   margin: 0;
 }
 
@@ -397,8 +399,8 @@ a.class-button {
 }
 
 .class-class-buttons {
-  margin-top: 1.5em;
-  margin-bottom: 0.75em;
+  margin-top: 1.25em;
+  margin-bottom: 0;
 }
 
 .class-class-buttons a {
@@ -884,7 +886,7 @@ a.button.rainbow {
   }
   .class-button {
     aspect-ratio: auto;
-    height: 10.5em;
+    height: 8em;
   }
   /* .class-class-buttons a {
   } */
@@ -894,7 +896,7 @@ a.button.rainbow {
     position: static;
   }
   .class-button .symbol {
-    padding-bottom: 0.25em;
+    /* padding-bottom: 0.25em; */
   }
   .not-mobile {
     display: none;
