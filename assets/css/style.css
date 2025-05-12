@@ -157,9 +157,14 @@ code,
 .person,
 body.class table,
 body.class .class-table,
-body.class figcaption {
-  font-family: "Courier New", Courier, monospace;
+body.class figcaption,
+article .content .small-text {
+  font-family: "Courier New", Courier, monospace !important;
   font-size: 15px;
+}
+
+article .outro {
+  margin-top: 3.25em;
 }
 
 b {
@@ -660,11 +665,16 @@ body.class .class-table ul.small ul {
   padding-left: 1.25em;
 }
 
-body.class article h1 {
+body.class article h1,
+article .content h1 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 25px;
   line-height: 1.4;
   font-weight: 300;
+  margin: 0;
+}
+
+article .meta h1 {
   margin: 0;
 }
 
@@ -739,6 +749,38 @@ body.class figcaption {
 
 body.class figure {
   margin: 2em 0;
+}
+
+a.transmission-snippet {
+  text-decoration: none !important;
+  position: relative;
+}
+
+a.transmission-snippet:first-of-type article {
+  margin-top: 1em;
+}
+
+a.transmission-snippet article {
+  position: relative;
+  margin-top: -5em;
+  background-color: rgb(242, 237, 195);
+}
+
+a.transmission-snippet article::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5em;
+  left: -1em;
+  right: -1em;
+  height: 10em;
+  background: linear-gradient(
+    rgba(255, 250, 205, 0),
+    rgba(255, 250, 205, 1) 60%
+  );
+  z-index: 1;
+}
+
+a.transmission-snippet article {
 }
 
 /* TWA: TOTAL WORK OF ART */
