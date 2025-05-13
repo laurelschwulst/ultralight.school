@@ -929,7 +929,9 @@ a.button.rainbow {
 
 @media screen and (max-width: 775px) {
   article,
-  body.class article h2 {
+  body.class article h2,
+  body.class article h1,
+  article .content h1 {
     font-size: 18px;
     letter-spacing: 0.025em;
     line-height: 1.3;
