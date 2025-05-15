@@ -1146,6 +1146,9 @@ a.button.apply {
     margin-left: auto !important;
     margin-right: auto !important;
   }
+  body.class article figure.solar-mobile img {
+    mix-blend-mode: multiply !important;
+  }
   body.class article figure.nosolar-mobile {
     filter: grayscale(0%);
     mix-blend-mode: multiply;
