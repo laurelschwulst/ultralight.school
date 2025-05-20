@@ -22,23 +22,20 @@
       </h3>
       <div class="mailing-list-container">
         <form
-          class="js-cm-form"
-          id="subForm"
-          action="https://www.createsend.com/t/subscribeerror?description="
+          action="https://buttondown.com/api/emails/embed-subscribe/ultralight-school"
           method="post"
-          data-id="191722FC90141D02184CB1B62AB3DC26FA15625C50F86DB461032FAD1DFB91D291DB471E005CCDD127613B862F227D236D66FB167E5613E6EA72F3A9CDE09BE6"
+          target="popupwindow"
+          onsubmit="window.open('https://buttondown.com/ultralight-school', 'popupwindow')"
+          class="embeddable-buttondown-form"
         >
           <input
-            autocomplete="Email"
-            class="js-cm-email-input qa-input-email"
-            id="fieldEmail"
-            maxlength="200"
-            name="cm-tjitdri-tjitdri"
-            required=""
             type="email"
+            name="email"
+            id="bd-email"
             placeholder="Your email here"
           />
-          <button type="submit">Subscribe</button>
+
+          <input type="submit" value="Subscribe" />
         </form>
       </div>
       <script
