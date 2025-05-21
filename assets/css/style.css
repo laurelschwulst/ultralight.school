@@ -991,6 +991,14 @@ a.button.apply {
   display: block;
 }
 
+#announcement {
+  position: absolute;
+  top: 0;
+  left: 1em;
+  right: 1em;
+  text-align: center;
+}
+
 /* MOBILE */
 
 @media screen and (max-width: 900px) {
