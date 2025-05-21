@@ -1063,6 +1063,9 @@ a.button.apply {
 }
 
 @media screen and (max-width: 555px) {
+  #announcement {
+    top: -1em;
+  }
   body.class table td,
   body.class table tr {
     border: 1px solid rgba(0, 0, 0, 0.35);
