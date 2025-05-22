@@ -1063,7 +1063,7 @@ a.button.apply {
 }
 
 @media screen and (max-width: 555px) {
-  body.home #announcement {
+  #announcement {
     top: -1em;
   }
   body.class table td,
