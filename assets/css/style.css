@@ -169,7 +169,8 @@ body.class table,
 body.class .class-table,
 body.class figcaption,
 article .content .small-text,
-a.sense-button {
+a.sense-button,
+.small-text {
   font-family: "Courier New", Courier, monospace !important;
   font-size: 15px;
 }
