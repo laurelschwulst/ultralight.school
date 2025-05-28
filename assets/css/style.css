@@ -168,6 +168,7 @@ code,
 body.class table,
 body.class .class-table,
 body.class figcaption,
+body.transmission figcaption,
 article .content .small-text,
 a.sense-button,
 .small-text {
@@ -489,9 +490,24 @@ article.wide {
   mix-blend-mode: multiply;
 }
 
+/* .email-hover {
+  filter: grayscale(100%);
+  transition: 0.25s ease filter;
+  mix-blend-mode: multiply;
+}
+
+.email-hover:hover {
+  mix-blend-mode: normal;
+}
+
+.email-hover:hover .email {
+  text-decoration: underline;
+} */
+
 .excerpt:hover img.normal,
 .excerpt:hover blockquote,
-.excerpt:hover cite {
+.excerpt:hover cite,
+.email-hover:hover {
   filter: grayscale(0%);
 }
 
