@@ -23,12 +23,22 @@ $(document).ready(function () {
   }
 
   function formatCountdown(days, hours, minutes, seconds) {
-    // days = addZeros(days);
-    // hours = addZeros(hours);
-    // minutes = addZeros(minutes);
-    // seconds = addZeros(seconds);
+    const parts = [];
 
-    return `${days} days, ${hours} hours, ${minutes} minutes, and ${seconds} seconds`;
+    if (days > 0) {
+      parts.push(`${days} ${days === 1 ? "day" : "days"}`);
+    }
+
+    parts.push(`${hours} ${hours === 1 ? "hour" : "hours"}`);
+    parts.push(`${minutes} ${minutes === 1 ? "minute" : "minutes"}`);
+    parts.push(`${seconds} ${seconds === 1 ? "second" : "seconds"}`);
+
+    // Join with commas, and insert "and" before the last part
+    if (parts.length > 1) {
+      return parts.slice(0, -1).join(", ") + " and " + parts.slice(-1);
+    } else {
+      return parts[0]; // only one time unit
+    }
   }
 
   function addZeros(n) {
