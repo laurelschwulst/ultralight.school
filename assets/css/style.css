@@ -630,6 +630,11 @@ body.class h2 {
   position: relative;
 }
 
+a.button.inactive {
+  pointer-events: none;
+  opacity: 0.35;
+}
+
 .class-header a.button {
   position: absolute;
   top: 0;
