@@ -176,6 +176,13 @@ a.sense-button,
   font-size: 15px;
 }
 
+.stamp {
+  position: absolute;
+  transform: rotate(-22deg);
+  top: 5em;
+  left: 1em;
+}
+
 article .outro {
   margin-top: 3.25em;
 }
