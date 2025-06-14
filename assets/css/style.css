@@ -333,6 +333,18 @@ nav#apply button {
   grid-gap: 1.5em;
   max-width: var(--global-width);
   margin: 0 auto 1.5em;
+  padding-bottom: 0.25em;
+}
+
+.button-grid.single {
+  display: block;
+  max-width: var(--global-width);
+  margin: 0 auto 1.5em;
+}
+
+.button-grid.single .class-button {
+  max-width: calc(33.333% - 0.5em);
+  margin: 0 auto;
 }
 
 .class-button {
@@ -623,6 +635,11 @@ header.fixed h3 {
 
 header.fixed h1 {
   padding-top: 0.65em;
+}
+
+h1.highlight {
+  /* background: rgba(0, 0, 0, 0.05);
+  display: inline-block; */
 }
 
 body.class h2 {
@@ -1033,6 +1050,9 @@ a.button.apply {
 @media screen and (max-width: 900px) {
   .button-grid {
     grid-template-columns: 1fr;
+  }
+  .button-grid.single .class-button {
+    max-width: 100%;
   }
   .class-button {
     aspect-ratio: auto;
