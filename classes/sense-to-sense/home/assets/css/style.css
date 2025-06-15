@@ -270,6 +270,23 @@ body.class h2 {
   margin: 0;
 }
 
+/* GOOGLE DOC */
+
+#doc {
+  text-align: center;
+  margin: 5em auto 0;
+}
+
+#doc iframe {
+  border-radius: 35px;
+  background: #fbf7d0;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.35);
+  max-width: 1200px;
+  padding: 1.5em;
+  height: calc(100vh - (40px + 6em));
+  margin-bottom: 2.5em;
+}
+
 /* MOBILE */
 
 @media screen and (max-width: 900px) {
