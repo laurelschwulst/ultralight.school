@@ -80,13 +80,15 @@ h1 {
 }
 h2 {
   font-size: 1.25em;
+  line-height: 1.25;
 }
 h3 {
   /* font-size: 1em; */
   font-size: 1.25em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  padding-bottom: 0.25em;
-  margin-bottom: 1em;
+  padding-bottom: 0.75em;
+  /* margin-bottom: 1em; */
+  margin-bottom: 0;
   margin-top: 5em;
 }
 /* span {
