@@ -1095,6 +1095,10 @@ a.button.apply {
   .class-header a.button {
     margin-top: 1em;
   }
+  #announcement {
+    position: static;
+    margin-top: -5em;
+  }
 }
 
 @media screen and (max-width: 775px) {
