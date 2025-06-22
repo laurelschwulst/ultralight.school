@@ -1,0 +1,26 @@
+.table-calendar {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    font-weight: inherit;
+    border: 1px solid currentColor;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  ul {
+    margin: 0.5rem;
+    padding-left: 2rem;
+  }
+  .agenda {
+    text-align: left;
+  }
+  tr {
+    /* opacity: 0.5; */
+  }
+  .unlocked {
+    opacity: 1;
+  }
+}
