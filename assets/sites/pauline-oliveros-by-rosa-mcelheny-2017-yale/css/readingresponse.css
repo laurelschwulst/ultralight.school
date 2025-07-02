@@ -1,0 +1,10 @@
+.textcontainer {
+	position:absolute;
+	width:60vw;
+	left:15vw;
+	top:10vh;
+}
+
+.question {
+	font-style:italic;
+}

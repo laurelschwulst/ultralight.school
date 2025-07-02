@@ -1,0 +1,230 @@
+body {
+    overflow:hidden;
+}
+
+.dot {
+    position:fixed;
+    top:50vh;
+    left:50vw;
+    width:8px;
+    height:8px;
+    background-color:black;
+    border-radius:50%;
+    z-index:100;
+}
+
+.container {
+	width:100vw;
+	height:100vh;
+	display:flex;
+	flex-direction:row;
+    flex-wrap:wrap;
+	justify-content:center;
+	align-items:center;
+/*        background-color:yellow;*/
+} 
+
+.info {
+    position:fixed;
+    bottom:5vh;
+    left:5vh;
+/*    background-color:red;*/
+    z-index:1;
+}   
+
+a {
+    text-decoration:none;
+    color:black;
+}
+
+
+.navigationbar {
+    position:fixed;
+    right:5vh;
+    left:5vh;
+    bottom:5vh;
+/*    background-color:yellow;*/
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    z-index:100000;
+    cursor:default;
+
+}
+
+
+#selrec:hover {
+    background-color:black;
+    color:white;
+}
+
+
+#year {
+/*    width:115px;*/
+    display:none;
+}
+
+#year:hover {
+    background-color:black;
+    color:white;
+}
+
+#type {
+    display:none;
+}
+
+
+#type:hover {
+    background-color:black;
+    color:white;
+}
+
+.type {
+    display:none;
+    position:absolute;
+    top:2em;
+    left:15px;
+    cursor:default;
+    white-space:nowrap;
+}
+
+.year {
+    display:none;
+    position:absolute;
+    top:0;
+    left:15px;
+    cursor:default;
+    white-space:nowrap;
+}
+
+
+
+/*.circle {
+    width:80vh;
+    height:80vh;
+    border-radius:50%;
+    border:4px solid black;
+    position:absolute;
+    left:10vh;
+    top:10vw;
+}
+*/
+
+/*TRACK STYLING*/
+.trackcontainer {
+    position:relative;
+    width:80vh;
+    height:80vh;
+/*    background-color:red;*/
+}
+
+.track {
+    height:10vh;
+    position:absolute;
+}
+
+.twelve {
+    left: 39vh;
+}
+
+.one {
+    left: 57vh;
+    top: 6vh;
+}
+
+.two {
+    left: 69vh;
+    top: 19vh;
+}
+
+.three {
+    left:75vh;
+    top:38vh;
+}
+
+.four {
+    left: 69vh;
+    bottom: 15vh;
+}
+
+.five {
+    left: 57vh;
+    bottom: 4vh;
+}
+
+.six {
+    left:39vh;
+    bottom:-5vh;
+}
+
+.seven {
+    bottom: 4vh;
+    left:21vh;
+}
+
+.eight {
+    bottom: 15vh;
+    left: 7vh;
+}
+
+.nine {
+    left:0;
+    top:38vh;
+}
+
+.ten {
+    left: 7vh;
+    top: 20vh;
+}
+
+.eleven {
+    top: 6vh;
+    left:21vh;
+}
+
+/*BUTTON AND TRACK INFO STYLING*/
+.button {
+    top:8px;
+    left:8px;
+    cursor:default;
+    display:block;
+}  
+
+.title {
+    display:none;
+    position:absolute;
+    top:0;
+    left:15px;
+    cursor:default;
+    white-space:nowrap;
+}  
+
+
+.bold {
+    font-weight:900;
+}
+
+.show {
+    display:block;
+}
+
+.hide {
+    display:none;
+}
+
+.year {
+    display:none;
+    padding-top:1em;
+}
+
+.type {
+    display:none;
+}
+
+
+@keyframes fadein {
+    from {color:white;}
+    to {color:black;}
+}
+

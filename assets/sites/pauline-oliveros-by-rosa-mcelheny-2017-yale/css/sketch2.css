@@ -1,0 +1,122 @@
+
+   .container {
+      width:20000px;
+      height:20000px;
+      left:10000px;
+      bottom:10000px;
+      position:relative;
+   }
+
+
+   .textblock {
+         font-family: 'EB Garamond', serif;
+         font-size:20px;
+         position:absolute;
+         width:200px;
+   }
+
+   
+   .what {
+     position:absolute;
+     left:100px;
+     top:100px;
+      }
+
+   .sound {
+       position:absolute;
+     left:400px;
+     top:400px;
+   }
+
+   .is {
+     position:absolute;
+     left:900px;
+     top:1000px;
+   }
+
+   .the {
+     position:absolute;
+     left:600px;
+     top:300px;
+   }
+
+   .most {
+     position:absolute;
+     left:100px;
+     bottom:100px;
+   }
+
+   .familiar {
+     position:absolute;
+     right:100px;
+     top:100px;
+   }
+
+   .to {
+     position:absolute;
+     left:1000px;
+     top:500px;
+   }
+
+   .youa {
+      position:absolute;
+     left:120px;
+     top:600px;
+   }
+
+   .you {
+         position:absolute;
+     left:2000px;
+     top:600px;
+   }
+
+   .can {
+     position:absolute;
+     right:500px;
+     top:500px;
+   }
+
+   .describe{
+     position:absolute;
+     right:1500px;
+     top:800px;
+   }
+   .it {
+      position:absolute;
+     left:1500;
+     bottom:400px;
+   }
+   .without {
+      position:absolute;
+     left:400px;
+     top:50px;
+   }
+
+   .referring {
+     position:absolute;
+     left:900px;
+     top:400px;
+   }
+
+   .source {
+     position:absolute;
+     left:900px;
+     top:500px;
+   }
+
+   .its {
+      position:absolute;
+     left:1000px;
+     top:400px;
+   }
+
+   .effect {
+     position:absolute;
+     left:200px;
+     top:450px;
+   }
+   .on {
+     position:absolute;
+     left:80px;
+     top:400px;
+   }

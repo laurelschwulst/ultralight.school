@@ -1,0 +1,103 @@
+<head>
+	<title>test circle</title>
+    <meta charset="utf-8"/>
+</head>
+<style>
+
+html{
+  height: 100%;
+}
+
+body{
+  height: 100%;
+  background: white;
+}
+
+.wrap{
+  margin: 100px auto;
+  width: 130px;
+  transform:rotate(90deg);
+  background-color:yellow;
+}
+
+.circle{
+  position: relative;
+  overflow: hidden;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 
+		  60px -60px 0 2px black, 
+		  -60px -60px 0 2px black, 
+		  -60px 60px 0 2px black, 
+		  60px 60px 0 2px black, 
+		  0 0 0 2px black;
+ }
+  
+  
+  .circle{
+    animation: border 10s ease 1 forwards;
+/*    animation-iteration-count: infinite;*/
+    cursor: none;
+ 	transform:rotateY(180deg);
+  }
+
+
+@keyframes border{
+  0% {
+    box-shadow: 
+    	60px -60px 0 2px white, 
+    	-60px -60px 0 2px white, 
+    	-60px 60px 0 2px white, 
+    	60px 60px 0 2px white, 
+    	0 0 0 2px white;
+  }
+
+  25% {
+    box-shadow: 
+    0 -125px 0 2px white, 
+    -60px -60px 0 2px white, 
+    -60px 60px 0 2px white, 
+    60px 60px 0 2px white, 
+    0 0 0 2px black;
+  }
+  50% {
+    box-shadow: 
+    0 -125px 0 2px white, 
+    -125px 0px 0 2px white, 
+    -60px 60px 0 2px white, 
+    60px 60px 0 2px white, 
+    0 0 0 2px black;
+  }
+  75% {
+    box-shadow: 
+    0 -125px 0 2px white, 
+    -125px 0px 0 2px white, 
+    0px 125px 0 2px white, 
+    60px 60px 0 2px white, 
+    0 0 0 2px black;
+  }
+  100% {
+    box-shadow: 
+    0 -125px 0 2px white, 
+    -125px 0px 0 2px white, 
+    0px 125px 0 2px white, 
+    120px 40px 0 2px white, 
+    0 0 0 2px black;
+  } 
+}
+
+
+</style>
+
+<body>
+
+<div class="wrap">
+ <div class="circle">
+ </div>
+</div>
+
+</body>
+
+</html>

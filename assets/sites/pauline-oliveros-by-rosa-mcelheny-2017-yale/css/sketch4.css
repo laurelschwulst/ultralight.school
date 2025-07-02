@@ -1,0 +1,112 @@
+.audiocontainer {
+	width:100vw;
+	height:100vh;
+	position:relative;
+}
+
+audio {
+	z-index:100;
+}
+
+div {
+	z-index:1;
+}
+
+#cicada {
+	position:absolute;
+	top:0;
+	left:0;
+	width:20vw;
+}
+#timeperspectives {
+	position:absolute;
+	top:75px;
+	left:15vw;
+	width:40vw;
+}
+#oneoffour {
+	position:absolute;
+	top:150px;
+	left:30vw;	
+	width:20vw;
+}
+#alienbog {
+	position:absolute;
+	top:225px;
+	left:45vw;
+	width:50vw;
+}
+#wanderer {
+	position:absolute;
+	top:300px;
+	left:60vw;
+	width:40vw;
+}
+
+.info {
+	height:100vh;
+	position:absolute;
+	top:0;
+/*	border-left:2px red dotted;*/
+}
+.caption {
+	padding-left:10px;
+	padding-right:10px;
+}
+img {
+	padding-left:10px;
+	padding-right:10px;
+}
+.cicada {
+	left:0;
+	width:15vw;
+/*	background:red;*/
+}
+
+.cicada .caption {
+	padding-top:34px;
+	display:none;
+}
+
+.timeperspectives {
+	left:15vw;
+	width:15vw;
+/*	background:orange;*/
+}
+
+.timeperspectives .caption {
+	padding-top:108px;
+	display:none;
+}
+
+#taperecorder {
+	width:35vw;
+}
+
+.oneoffour {
+	left:30vw;	
+	width:15vw;
+/*	background:yellow;*/
+}
+
+.oneoffour .caption {
+	padding-top:182px;
+	display:none;
+}
+
+.alienbog {
+	left:45vw;
+	width:15vw;
+/*	background:green;*/
+}
+
+.alienbog .caption {
+	padding-top:260px;
+	display:none;
+}
+
+.wanderer {
+	left:60vw;
+	width:15vw;
+/*	background:blue;*/
+}

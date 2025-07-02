@@ -1,0 +1,79 @@
+body {
+	background-color:black;
+	overflow:hidden;
+}
+
+.container {
+	width:100vw;
+	height:100vh;
+	display:flex;
+	flex-direction:row;
+    flex-wrap:wrap;
+	justify-content:center;
+	align-items:center;
+} 
+
+.information {
+	color:white;
+	width: 50vw;
+    animation-name:fadetext;
+	animation-duration:4s;
+}
+
+@keyframes fadetext{
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+.pauline {
+	font-style: italic;
+}
+
+
+.info {
+    position:fixed;
+    bottom:5vh;
+    left:5vh;
+/*    background-color:red;*/
+    z-index:1;
+}   
+
+a {
+	color:white;
+}
+
+.navigationbar {
+    position:fixed;
+    right:5vh;
+    left:5vh;
+    bottom:5vh;
+/*    background-color:yellow;*/
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    z-index:100000;
+    cursor:default;
+    color:white;
+    animation-name:fadetext;
+	animation-duration:4s;
+}
+
+#year:hover {
+    color:black;
+    background-color:white;
+}
+
+#type:hover {
+    color:black;
+    background-color:white;
+}
+
+#selrec:hover {
+    color:black;
+    background-color:white;
+}
+
+a {
+	text-decoration:none;
+}
