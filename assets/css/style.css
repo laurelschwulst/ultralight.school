@@ -134,6 +134,12 @@ img.normal {
   filter: grayscale(0%);
 }
 
+img.random-img {
+  width: 75px;
+  border-radius: 5px;
+  position: absolute;
+}
+
 img.noblend {
   mix-blend-mode: normal;
 }
