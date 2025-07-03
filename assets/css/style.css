@@ -1033,6 +1033,12 @@ a.button.apply {
   border: 1px solid black;
 }
 
+a.luma:hover {
+  background: black;
+  color: lemonchiffon;
+  text-decoration: none;
+}
+
 .not-mobile {
   display: block;
 }
