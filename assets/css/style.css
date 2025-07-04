@@ -135,9 +135,23 @@ img.normal {
 }
 
 img.random-img {
-  width: 75px;
+  width: 100px !important;
+  height: 100px !important;
   border-radius: 5px;
-  position: absolute;
+  mix-blend-mode: normal;
+  opacity: 1;
+}
+
+img.random-img-large {
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 12px;
+  mix-blend-mode: normal;
+  opacity: 1;
+  margin: 0 0.5em;
+  align-self: center;
+  max-width: 100%;
+  align-self: center;
 }
 
 img.noblend {
