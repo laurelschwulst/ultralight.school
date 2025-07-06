@@ -255,6 +255,11 @@ figure#logo {
   margin: 3.65em auto 3.75em;
 }
 
+figure#logo.walking-the-internet {
+  padding: 1em 2.5em;
+  height: 40h;
+}
+
 /* FOOTER */
 
 footer {
@@ -1124,6 +1129,9 @@ a.luma:hover {
   #announcement {
     position: static;
     margin-top: -5em;
+  }
+  figure#logo.walking-the-internet {
+    height: auto;
   }
 }
 
