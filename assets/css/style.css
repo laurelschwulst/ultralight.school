@@ -131,8 +131,26 @@ img.solar {
 }
 /* https://www.museoreinasofia.es/en/exhibitions/david-hammons-global-fax-festival */
 img.normal {
-  filter: grayscale(0%);
+  filter: grayscale(0%) !important;
 }
+
+img.non-solar {
+  mix-blend-mode: normal !important;
+}
+
+img.border {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+}
+
+/* img.solar-hover {
+  mix-blend-mode: multiply !important;
+  transition: 0.5s ease mix-blend-mode;
+}
+
+img.solar-hover:hover {
+  mix-blend-mode: normal !important;
+} */
 
 img.random-img {
   width: 100px !important;
