@@ -135,7 +135,7 @@ img.normal {
 }
 
 img.non-solar {
-  mix-blend-mode: normal !important;
+  filter: grayscale(0%) !important;
 }
 
 img.border {
@@ -569,8 +569,9 @@ article.wide {
 .excerpt:hover img.normal,
 .excerpt:hover blockquote,
 .excerpt:hover cite,
-.email-hover:hover {
-  filter: grayscale(0%);
+.email-hover:hove,
+img.non-solar {
+  filter: grayscale(0%) !important;
 }
 
 .excerpt blockquote {
@@ -871,6 +872,13 @@ body.class figcaption {
 
 body.class figure {
   margin: 2em 0;
+}
+
+figure.two-up {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.5em;
+  margin-bottom: 1em;
 }
 
 a.transmission-snippet {
