@@ -1243,8 +1243,7 @@ a.luma:hover {
   }
   .excerpt img.normal,
   .excerpt blockquote,
-  .excerpt cite,
-  img.normal {
+  .excerpt cite {
     filter: grayscale(0%);
   }
   .excerpt {
