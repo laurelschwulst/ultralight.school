@@ -546,7 +546,8 @@ article.wide {
 
 .excerpt img.normal,
 .excerpt blockquote,
-.excerpt cite {
+.excerpt cite,
+.highlight {
   filter: grayscale(100%);
   transition: 0.25s ease filter;
   mix-blend-mode: multiply;
@@ -566,11 +567,16 @@ article.wide {
   text-decoration: underline;
 } */
 
+.highlight i {
+  background: mistyrose;
+}
+
 .excerpt:hover img.normal,
 .excerpt:hover blockquote,
 .excerpt:hover cite,
-.email-hover:hove,
-img.non-solar {
+.email-hover:hover,
+img.non-solar,
+.highlight:hover {
   filter: grayscale(0%) !important;
 }
 
