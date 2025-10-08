@@ -138,6 +138,15 @@ img.non-solar {
   filter: grayscale(0%) !important;
 }
 
+img.hover-color {
+  filter: grayscale(100%);
+  transition: 0.5s ease all;
+}
+
+img.hover-color:hover {
+  filter: grayscale(0%);
+}
+
 img.border {
   border: 1px solid rgba(0, 0, 0, 0.25);
   border-radius: 12px;
@@ -207,6 +216,7 @@ body.class table,
 body.class .class-table,
 body.class figcaption,
 body.transmission figcaption,
+figcaption,
 article .content .small-text,
 a.sense-button,
 .small-text {
@@ -340,7 +350,6 @@ nav#dropdown select {
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 35px;
   padding: 0.5em;
-  cursor: pointer;
   transition: 0.35s ease background-color;
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.25);
   font-family: "Helvetica Neue";
@@ -501,6 +510,21 @@ article {
   font-family: "Helvetica Neue";
   font-size: 25px;
   line-height: 1.4;
+}
+
+article.special {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body.special {
+  margin-top: 0;
+  padding: 2.5em;
+}
+
+article.special img {
+  filter: grayscale(0%);
 }
 
 article .content {
@@ -1317,4 +1341,70 @@ a.luma:hover {
   footer.class-footer {
     height: 0.25em;
   }
+}
+
+/* DORMANT */
+
+a.home-link {
+  text-decoration: none;
+}
+
+body.dormant {
+  background: black;
+  color: lemonchiffon;
+  padding: 7em;
+}
+
+body.dormant main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100vh - 14em);
+  text-align: left;
+}
+
+body.dormant .button-grid {
+  max-width: 100%;
+  display: block;
+  text-align: left;
+  margin: 0;
+}
+
+body.dormant .button-grid a.class-button,
+body.dormant .button-grid a.class-button:hover {
+  background: lemonchiffon;
+  color: black;
+  display: inline-block;
+  vertical-align: top;
+  width: 269px;
+  height: 269px;
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+body.dormant .button-grid .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+body.dormant .button-grid a.class-button.library {
+  background: white;
+}
+
+body.dormant .button-grid a.class-button .title {
+  text-align: center;
+}
+
+body.dormant details > summary {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+nav#info a {
+  color: lemonchiffon;
 }
