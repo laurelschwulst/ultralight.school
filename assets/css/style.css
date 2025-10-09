@@ -1153,6 +1153,72 @@ a.luma:hover {
   text-align: center;
 }
 
+/* DORMANT */
+
+a.home-link {
+  text-decoration: none;
+}
+
+body.dormant {
+  background: black;
+  color: lemonchiffon;
+  padding: 7em;
+}
+
+body.dormant main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100vh - 14em);
+  text-align: left;
+}
+
+body.dormant .button-grid {
+  max-width: 100%;
+  display: block;
+  text-align: left;
+  margin: 0;
+}
+
+body.dormant .button-grid a.class-button,
+body.dormant .button-grid a.class-button:hover {
+  background: lemonchiffon;
+  color: black;
+  display: inline-block;
+  vertical-align: top;
+  width: 269px;
+  height: 269px;
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+body.dormant .button-grid .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+body.dormant .button-grid a.class-button.library {
+  background: white;
+}
+
+body.dormant .button-grid a.class-button .title {
+  text-align: center;
+}
+
+body.dormant details > summary {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+nav#info a {
+  color: lemonchiffon;
+}
+
 /* MOBILE */
 
 @media screen and (max-width: 900px) {
@@ -1210,6 +1276,15 @@ a.luma:hover {
   body.class figure#logo .images {
     height: 40vh !important;
   }
+  h1 {
+    margin-top: 3em;
+  }
+  body.dormant {
+    padding: 1em;
+  }
+  body.dormant main {
+    min-height: calc(100vh - 2em);
+  }
 }
 
 @media screen and (max-width: 775px) {
@@ -1224,9 +1299,15 @@ a.luma:hover {
   article .content {
     padding: 0.5em 0 0;
   }
+  h1 {
+    margin-top: 3em;
+  }
 }
 
 @media screen and (max-width: 555px) {
+  h1 {
+    margin-top: 5.75em;
+  }
   #announcement {
     top: -1em;
   }
@@ -1341,70 +1422,4 @@ a.luma:hover {
   footer.class-footer {
     height: 0.25em;
   }
-}
-
-/* DORMANT */
-
-a.home-link {
-  text-decoration: none;
-}
-
-body.dormant {
-  background: black;
-  color: lemonchiffon;
-  padding: 7em;
-}
-
-body.dormant main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: calc(100vh - 14em);
-  text-align: left;
-}
-
-body.dormant .button-grid {
-  max-width: 100%;
-  display: block;
-  text-align: left;
-  margin: 0;
-}
-
-body.dormant .button-grid a.class-button,
-body.dormant .button-grid a.class-button:hover {
-  background: lemonchiffon;
-  color: black;
-  display: inline-block;
-  vertical-align: top;
-  width: 269px;
-  height: 269px;
-  margin: 0;
-  margin-bottom: 1em;
-}
-
-body.dormant .button-grid .title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-}
-
-body.dormant .button-grid a.class-button.library {
-  background: white;
-}
-
-body.dormant .button-grid a.class-button .title {
-  text-align: center;
-}
-
-body.dormant details > summary {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-}
-
-nav#info a {
-  color: lemonchiffon;
 }
