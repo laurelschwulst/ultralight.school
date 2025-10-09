@@ -1159,6 +1159,10 @@ a.home-link {
   text-decoration: none;
 }
 
+html.dormant {
+  background: black;
+  color: lemonchiffon;
+}
 body.dormant {
   background: black;
   color: lemonchiffon;
@@ -1283,7 +1287,12 @@ nav#info a {
     padding: 1em;
   }
   body.dormant main {
-    min-height: calc(100vh - 2em);
+    min-height: calc(100dvh - 2em);
+  }
+  body.dormant .button-grid a.class-button,
+  body.dormant .button-grid a.class-button:hover {
+    height: 175px;
+    width: 175px;
   }
 }
 
