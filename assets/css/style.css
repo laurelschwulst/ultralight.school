@@ -1185,7 +1185,8 @@ body.dormant .button-grid {
 }
 
 body.dormant .button-grid a.class-button,
-body.dormant .button-grid a.class-button:hover {
+body.dormant .button-grid a.class-button:hover,
+.button-grid span.class-button {
   background: lemonchiffon;
   color: black;
   display: inline-block;
@@ -1194,6 +1195,40 @@ body.dormant .button-grid a.class-button:hover {
   height: 269px;
   margin: 0;
   margin-bottom: 1em;
+  margin-right: 0.5em;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0.025em;
+}
+
+.button-grid span.class-button .title {
+  position: absolute;
+  top: 1.25em;
+  left: 1.25em;
+  border-radius: 20px;
+  display: block;
+  padding: 0.35em 0.75em;
+  backdrop-filter: blur(10px);
+  background: black;
+  display: inline-block;
+  height: auto;
+  width: auto;
+  color: white;
+}
+
+.button-grid span.class-button .buttons {
+  position: absolute;
+  bottom: 1.25em;
+  left: 1.25em;
+}
+
+.button-grid span.class-button .buttons a {
+  padding: 0.35em 0.75em;
+  backdrop-filter: blur(10px);
+  background: lemonchiffon;
+  display: inline-block;
+  border-radius: 20px;
+  text-decoration: none;
 }
 
 body.dormant .button-grid .title {
@@ -1290,9 +1325,10 @@ nav#info a {
     min-height: calc(100dvh - 2em);
   }
   body.dormant .button-grid a.class-button,
-  body.dormant .button-grid a.class-button:hover {
+  body.dormant .button-grid a.class-button:hover,
+  .button-grid span.class-button {
     height: 175px;
-    width: 175px;
+    width: 100%;
   }
 }
 
