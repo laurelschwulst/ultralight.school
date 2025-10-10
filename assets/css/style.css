@@ -415,6 +415,10 @@ nav#apply button {
   position: relative;
 }
 
+span.class-button {
+  cursor: auto;
+}
+
 a.class-button.inactive {
   cursor: auto;
   background-color: transparent;
