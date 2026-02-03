@@ -536,12 +536,17 @@ article .content {
   padding: 0.95em 1.1em 0;
 }
 
+a.no-underline {
+  text-decoration: none;
+}
+
 article .meta {
   font-family: "Courier New", Courier, monospace;
   font-size: 15px;
   letter-spacing: 0.01em;
   font-weight: normal;
   position: relative;
+  display: inline-block;
 }
 
 article .meta * {
