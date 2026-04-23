@@ -402,6 +402,7 @@ nav#apply button {
 .class-button {
   /* aspect-ratio: 8.5 / 11; */
   aspect-ratio: 1 / 1;
+  overflow: hidden;
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 35px;
   padding: 0.5em;
