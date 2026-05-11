@@ -1530,3 +1530,7 @@ nav#select {
   filter: grayscale(0%);
   opacity: 1; */
 }
+
+a.class-button.soon:hover {
+  cursor: wait;
+}
