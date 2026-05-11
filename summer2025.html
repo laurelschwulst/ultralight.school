@@ -15,6 +15,23 @@
 
   <body id="top" class="home">
     <main>
+
+      <nav id="select">
+
+          <label for="page-select" class="visually-hidden">Navigate</label>
+
+          <select
+          id="page-select"
+          class="plain-select"
+          onchange="location = this.value;"
+          >
+              <option value="summer2026.html">SUMMER 2026 (...)</option>
+              <option value="summer2025.html" selected>SUMMER 2025</option>
+              <option value="info.html">Information</option>
+          </select>
+
+        </nav>
+        
       <div id="announcement">
         <!-- <h3 class="voice">
           ( &nbsp;&nbsp;Note 6.21.2025: We are currently reformatting the class

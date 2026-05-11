@@ -1276,6 +1276,9 @@ nav#info a {
 /* MOBILE */
 
 @media screen and (max-width: 900px) {
+  body.dormant .button-grid {
+    margin-top: 2.5em;
+  }
   .button-grid {
     grid-template-columns: 1fr;
   }
@@ -1424,19 +1427,6 @@ nav#info a {
     margin-left: 0;
     margin-top: 0.5em;
   }
-  nav#dropdown {
-    top: 0.25em;
-    left: 0.25em;
-    right: 0.25em;
-    position: absolute;
-    mix-blend-mode: normal;
-    filter: grayscale(0%);
-    opacity: 1;
-  }
-  nav#dropdown select {
-    display: block;
-    width: calc(100vw - 1.25em);
-  }
   nav#apply {
     position: absolute;
     top: 3.25em;
@@ -1482,4 +1472,61 @@ nav#info a {
   footer.class-footer {
     height: 0.25em;
   }
+}
+
+/* SUMMER 2026 */
+
+.plain-select {
+  /* appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+
+  border: 0;
+  padding: 0 1.2em 0 0;
+  margin: 0; */
+
+  cursor: pointer;
+  
+  opacity: 0.9;
+  mix-blend-mode: multiply;
+  filter: grayscale(100%);
+
+  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='currentColor'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 0.6em; */
+}
+
+.plain-select:focus {
+  /* outline: none; */
+}
+
+.plain-select:hover,
+.plain-select:focus-visible {
+  /* text-decoration: underline; */
+}
+
+/* screen-reader only */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+nav#select {
+  top: 0.5em;
+  left: 0.5em;
+  right: 0.5em;
+  position: absolute;
+  text-align: left;
+  /* mix-blend-mode: normal;
+  filter: grayscale(0%);
+  opacity: 1; */
 }
