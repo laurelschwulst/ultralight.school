@@ -1457,6 +1457,9 @@ a.class-button.soon:hover {
   h1 {
     margin-top: 5.75em;
   }
+  body.mailing-list h1 {
+     margin-top: 0.75em;
+  }
   #announcement {
     top: -1em;
   }
