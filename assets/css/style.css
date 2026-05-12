@@ -1273,6 +1273,92 @@ nav#info a {
   color: lemonchiffon;
 }
 
+/* SUMMER 2026 */
+
+.plain-select {
+  /* appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+
+  border: 0;
+  padding: 0 1.2em 0 0;
+  margin: 0; */
+
+  cursor: pointer;
+  
+  opacity: 0.9;
+  mix-blend-mode: multiply;
+  filter: grayscale(100%);
+
+  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='currentColor'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 0.6em; */
+}
+
+.plain-select:focus {
+  /* outline: none; */
+}
+
+.plain-select:hover,
+.plain-select:focus-visible {
+  /* text-decoration: underline; */
+}
+
+/* screen-reader only */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+nav#select {
+  top: 0.5em;
+  left: 0.5em;
+  display: inline-block;
+  z-index: 333;
+  opacity: 0.9;
+  mix-blend-mode: multiply;
+  filter: grayscale(100%);
+  position: absolute;
+  text-align: left;
+  /* mix-blend-mode: normal;
+  filter: grayscale(0%);
+  opacity: 1; */
+}
+
+a.class-button.soon:hover {
+  cursor: wait;
+}
+
+#faq details summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+#faq details[open] summary span {
+  text-decoration: none;
+}
+
+#faq details[open] summary {
+  opacity: 1;
+}
+
+#faq details summary span {
+  text-decoration: underline;
+}
+
+#faq:has(details[open]) details:not([open]) summary {
+  opacity: 0.5;
+}
+
 /* MOBILE */
 
 @media screen and (max-width: 900px) {
@@ -1472,90 +1558,8 @@ nav#info a {
   footer.class-footer {
     height: 0.25em;
   }
-}
-
-/* SUMMER 2026 */
-
-.plain-select {
-  /* appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-
-  font: inherit;
-  color: inherit;
-  background-color: transparent;
-
-  border: 0;
-  padding: 0 1.2em 0 0;
-  margin: 0; */
-
-  cursor: pointer;
-  
-  opacity: 0.9;
-  mix-blend-mode: multiply;
-  filter: grayscale(100%);
-
-  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='currentColor'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 0.6em; */
-}
-
-.plain-select:focus {
-  /* outline: none; */
-}
-
-.plain-select:hover,
-.plain-select:focus-visible {
-  /* text-decoration: underline; */
-}
-
-/* screen-reader only */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  white-space: nowrap;
-}
-
-nav#select {
-  top: 0.5em;
-  left: 0.5em;
-  display: inline-block;
-  z-index: 333;
-  opacity: 0.9;
-  mix-blend-mode: multiply;
-  filter: grayscale(100%);
-  position: absolute;
-  text-align: left;
-  /* mix-blend-mode: normal;
-  filter: grayscale(0%);
-  opacity: 1; */
-}
-
-a.class-button.soon:hover {
-  cursor: wait;
-}
-
-#faq details summary {
-  list-style: none;
-  cursor: pointer;
-}
-
-#faq details[open] summary span {
-  text-decoration: none;
-}
-
-#faq details[open] summary {
-  opacity: 1;
-}
-
-#faq details summary span {
-  text-decoration: underline;
-}
-
-#faq:has(details[open]) details:not([open]) summary {
-  opacity: 0.5;
+  nav#select {
+    display: none;
+    /* font-size: 2em; */
+  }
 }

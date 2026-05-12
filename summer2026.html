@@ -14,11 +14,32 @@
     <link rel="stylesheet" href="assets/css/summer2026.css">
   </head>
 
-  <body class="twenty-six">
-
+  <body id="top" class="twenty-six">
     <main>
 
+      <nav id="select">
+
+          <label for="page-select" class="visually-hidden">Navigate</label>
+
+          <select
+          id="page-select"
+          class="plain-select"
+          onchange="location = this.value;"
+          >
+              <option value="summer2026.html selected">SUMMER 2026</option>
+              <option value="summer2025.html">SUMMER 2025</option>
+          </select>
+
+        </nav>
+        
+      <div id="announcement">
+      </div>
       <header>
+        <h1><a href="index.html" class="home-link">ultralight.school</a></h1>
+
+  <!-- <body id="top" class="twenty-six">
+
+    <main>
 
         <nav id="select">
 
@@ -35,7 +56,9 @@
 
         </nav>
 
-        <h1><a href="/" class="home-link">ultralight.school</a></h1>
+        <header>
+
+        <h1><a href="/" class="home-link">ultralight.school</a></h1> -->
 
         <figure id="logo">
           <svg
@@ -330,13 +353,17 @@
           <details>
             <summary>( &nbsp;&nbsp;<span>what's going on this summer 2026 in particular?</span>&nbsp;&nbsp; )</summary>
             <p>
-              we are repeating our class <a href="classes/sense-to-sense-summer2026/index.html">sense to sense</a> — but this time it's hosted online rather than in-person.
+              we are offering again our class
+              <!-- <a href="classes/sense-to-sense-summer2026/index.html"> -->
+                "sense to sense"
+              <!-- </a> -->
+              — but this time it's hosted online rather than in-person.
             </p>
             <p>
               there will also be one *new* class in-person in NYC, late july. stay tuned.
             </p>
             <p>
-              stay tuned for other happenings...
+              other happenings coming soon...
             </p>
           </details><br>
 
