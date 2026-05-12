@@ -1276,9 +1276,9 @@ nav#info a {
 /* MOBILE */
 
 @media screen and (max-width: 900px) {
-  body.dormant .button-grid {
+  /* body.dormant .button-grid {
     margin-top: 2.5em;
-  }
+  } */
   .button-grid {
     grid-template-columns: 1fr;
   }
@@ -1523,7 +1523,11 @@ nav#info a {
 nav#select {
   top: 0.5em;
   left: 0.5em;
-  right: 0.5em;
+  display: inline-block;
+  z-index: 333;
+  opacity: 0.9;
+  mix-blend-mode: multiply;
+  filter: grayscale(100%);
   position: absolute;
   text-align: left;
   /* mix-blend-mode: normal;
@@ -1533,4 +1537,25 @@ nav#select {
 
 a.class-button.soon:hover {
   cursor: wait;
+}
+
+#faq details summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+#faq details[open] summary span {
+  text-decoration: none;
+}
+
+#faq details[open] summary {
+  opacity: 1;
+}
+
+#faq details summary span {
+  text-decoration: underline;
+}
+
+#faq:has(details[open]) details:not([open]) summary {
+  opacity: 0.5;
 }

@@ -1,3 +1,70 @@
-body {
+:root {
+  /* --bg-color: #e6f1e0; */
+  --bg-color: #e4f2dc;
+}
+
+html, body.twenty-six {
+  background-color: var(--bg-color) !important;
+}
+
+.twenty-six {
+  background-color: var(--bg-color) !important;
+}
+
+/* body {
   padding: 5em 1.5em;
+} */
+
+nav#soon {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+}
+
+nav#soon a {
+  height: 1.5em;
+  width: 1.5em;
+  display: block;
+  border-radius: 50%;
+  mix-blend-mode: multiply;
+  background-color: #eee;
+  border: 1px solid #eee;
+}
+
+nav#soon a:hover {
+  background-color: #aaa;
+}
+
+nav#soon a.filled {
+  background-color: #aaa;
+}
+
+.button-grid a.class-button .title {
+  height: auto;
+  width: auto;
+}
+
+.class-button {
+  position: relative;
+  overflow: visible;
+}
+
+a.class-button .label {
+  font-family: "Courier New", Courier, monospace !important;
+  font-size: 15px;
+  position: absolute;
+  left: 1em;
+  bottom: 2em;
+  transform: rotate(-20deg);
+}
+
+a.class-button .label.two {
+  right: 2.5em;
+  left: auto;
+  bottom: 5.5em;
+  transform: rotate(18deg);
+}
+
+nav#info a {
+  color: black;
 }
