@@ -1,6 +1,9 @@
 :root {
   /* --bg-color: #e6f1e0; */
-  --bg-color: #e4f2dc;
+  /* --bg-color: #e4f2dc; */
+  /* --bg-color: #F1FCE8; */
+  --bg-color: #eafede;
+  /* --bg-color: #e4ffd3; */
 }
 
 html, body.twenty-six {
@@ -67,4 +70,41 @@ a.class-button .label.two {
 
 nav#info a {
   color: black;
+}
+
+.twenty-five {
+  background: var(--global-color);
+}
+
+.twenty-six-twenty-five {
+  background: linear-gradient(
+    rgba(238, 254, 225, 1),
+    rgba(255, 250, 205, 1)
+    50%);
+  height: 45vh;
+}
+
+.twenty-five a.transmission-snippet:first-of-type article {
+  margin-top: 0;
+}
+
+body.mailing-list {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+body.mailing-list .inside {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-bottom: 3em;
+  padding-top: 3em;
+}
+
+.twenty-six.inside a.transmission-snippet article {
+  background: rgba(238, 254, 225, 1);
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.twenty-six.inside a.transmission-snippet article::after {
+    background: linear-gradient(rgba(238, 254, 225, 0), rgba(238, 254, 225, 1) 60%);
 }

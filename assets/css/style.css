@@ -1338,25 +1338,38 @@ a.class-button.soon:hover {
   cursor: wait;
 }
 
-#faq details summary {
+.faq details summary {
   list-style: none;
   cursor: pointer;
 }
 
-#faq details[open] summary span {
+.faq details[open] summary span {
   text-decoration: none;
 }
 
-#faq details[open] summary {
+.faq details[open] summary {
   opacity: 1;
 }
 
-#faq details summary span {
+.faq details summary span {
   text-decoration: underline;
 }
 
-#faq:has(details[open]) details:not([open]) summary {
+.faq:has(details[open]) details:not([open]) summary {
   opacity: 0.5;
+}
+
+.faq.transmission details summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.faq.transmission:has(details[open]) details:not([open]) summary {
+  opacity: 1;
+}
+
+.faq.transmission details summary {
+  text-decoration: underline;
 }
 
 /* MOBILE */
