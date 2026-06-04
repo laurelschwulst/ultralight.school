@@ -111,3 +111,22 @@ body.mailing-list .inside {
 .twenty-six.inside a.transmission-snippet article::after {
     background: linear-gradient(rgba(238, 254, 225, 0), rgba(238, 254, 225, 1) 60%);
 }
+
+sup.shimmer {
+  font-family: monospace; font-size: 20px; letter-spacing: 0.01em; padding-left: 0.15em; vertical-align: 3px;
+}
+
+.shimmer {
+   font-size: 18px;
+   /* vertical-align: -1px; */
+}
+
+@media screen and (max-width: 775px) {
+  sup.shimmer {
+    font-size: 16px;
+    vertical-align: 1px;
+  }
+  .shimmer {
+    font-size: 16px;
+  }
+}
