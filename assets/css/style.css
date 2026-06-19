@@ -677,7 +677,8 @@ img.non-solar,
   display: none;
 }
 
-.person {
+.person,
+.timezone {
   display: inline-block;
   text-transform: uppercase;
   margin: 0 0.15em;
