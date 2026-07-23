@@ -17,10 +17,22 @@
       }
       .schedule {
         border: 1px solid black;
+        display: flex;
       }
       .day {
         width: 33.333%;
         border-right: 1px solid black;
+        /* padding: 0.5rem; */
+      }
+      .day:last-of-type {
+        border-right: 0;
+      }
+      .title {
+        border-bottom: 1px solid black;
+        padding: 0.5rem;
+      }
+      .inside {
+         padding: 0.5rem;
       }
     </style>
   </head>
@@ -77,8 +89,8 @@
     <nav id="left">
         <div>
             <a href="#schedule">schedule</a><br>
-            <a href="#overview">overview</a><br>
-            <a href="#resources">resources</a><br><br>
+            <a href="#resources">resources</a><br>
+            <a href="#overview">overview</a><br><br>
             
             <a href="https://drive.google.com/drive/folders/1F22BOBYxI_cjTDImXBprvLIP9zD1gBbu?usp=drive_link" target="_blank">Google Drive</a><br>
             <a href="https://www.are.na/research-as-a-leisure-activity-summer-2026-uls/index" target="_blank">✶✶</a>
@@ -92,19 +104,31 @@
 
         <div class="schedule">
           <div class="day">
-            <b>Friday, July 24 — 7-9pm</b>
-            <br><br>
-            TKTK
+            <div class="title">
+              <b>Friday</b> — 7-9pm
+            </div>
+            <div class="inside">
+              intros<br>
+            </div>
           </div>
           <div class="day">
-            <b>Saturday, July 25 — 10am-7pm</b>
-            <br><br>
-            TKTK
+            <div class="title">
+              <b>Saturday</b> — 10am-7pm
+            </div>
+            <div class="inside">
+              <u>morning</u>
+              <ul>
+                <li>collecting</li>
+              </ul>
+            </div>
           </div>
           <div class="day">
-            <b>Sunday, July 26 — 10am-5pm</b>
-            <br><br>
-            TKTK
+            <div class="title">
+              <b>Sunday</b> — 10am-5pm
+            </div>
+            <div class="inside">
+              TKTK
+            </div>
           </div>
         </div>
         
@@ -162,6 +186,55 @@
     </section>
 
 
+    
+
+
+    <section>
+        
+        <h3 id="resources">Resources</h2>
+
+        
+            <div class="columns">
+                <div>
+                  <p>
+                    <b>Index Greenpoint</b>
+                  </p>
+                  <p>
+                    ✦ Wi-fi ( Network )<br>
+                    Index Space<br>
+                    eggsandwich
+                  </p>
+                  <p>
+                    ✦ Projecting<br>
+                      You can airplay to TKTK as long as you're on the network
+                  </p>
+                  <p>
+                    ✦ Printing<br>
+                    The printer "Brother TKTK" can be accessed as long as you're on the network
+                  </p>
+                </div>
+                <div>
+                  <p>
+                  <b>Elsewhere...</b>
+                  </p>
+                  <p>
+                    NYC Installation:<br>
+                    <a href="https://www.olfactoryartkeller.com/scent-library">The Scent Lending Library</a><br>
+                    (at Olfactory Art Keller)
+                  </p>
+                  <p>
+                    NYC Store:<br>
+                    <a href="https://maps.app.goo.gl/vMsikMgSn7KZFQfU8">Scent Bar</a><br>
+                    (by Luckyscent)
+                  </p>
+                </div>
+            </div>
+        
+
+    </section>
+
+
+
     <section>
         <h3 id="overview">Overview</h2>
             <p>
@@ -197,62 +270,6 @@
 
        
         
-    </section>
-
-
-    <section>
-        
-        <h3 id="resources">Resources</h2>
-
-          <div>
-            TKTK
-          </div>
-        
-            <!-- <div class="columns">
-                <div>
-                  <p>
-                    <b>References</b>
-                  </p>
-                  Week 1. "Sight"<br>
-                  <a href="https://docs.google.com/presentation/d/1B6XRbU7wKW1gAiN8PdwEq_zF6fOAfk7_eUOTTxV3c0I/edit?usp=sharing">Lecture Slides</a><br>
-                  <a href="https://www.are.na/sense-to-sense/sight-amx0zw05b6q">Are.na References</a><br><br>
-                  Week 2. "Hearing"<br>
-                  <a href="https://docs.google.com/presentation/d/1HqMhrAMD7KmUVWhTbMr4PmJJRYMs43WfU5cp86MCZQg/edit?usp=sharing">Lecture Slides</a><br>
-                  <a href="https://www.are.na/sense-to-sense/hearing-gxh3e19sqxk">Are.na References</a><br><br> 
-                  Week 3. "Smell"<br>
-                  <a href="https://docs.google.com/presentation/d/1QU_sYD1Ja8i7m4jlFKJgFk9x6DrMeJQKeww1B1GOxi0/edit?usp=sharing">Lecture Slides</a><br>
-                  <a href="https://www.are.na/sense-to-sense/smell-szkuszlvej0">Are.na References</a><br><br>
-                  Week 4. "Touch"<br>
-                  <a href="https://docs.google.com/presentation/d/177u1bkLxbBmpvcNk6WtH0JalmBatlGHLzE4cSxkJ5c4/edit?usp=sharing">Lecture Slides</a><br>
-                  <a href="https://www.are.na/sense-to-sense/touch-tl26hat7mbo">Are.na References</a><br><br>
-                  Week 5. "Taste"<br>
-                  <a href="#">Lecture Slides</a><br>
-                  <a href="https://www.are.na/sense-to-sense/taste-hjyeymx4hke">Are.na References</a><br><br>
-                  <a href="https://www.are.na/laurel-schwulst/bibliography-for-sense-to-sense">Living Bibliography</a><br>
-                  (General references for this class, feel free to add)<br><br>
-                  <a href="https://www.are.na/sense-to-sense-summer-2026-uls">Our Are.na Group</a><br>
-                  (Our class home on Are.na)<br><br>
-                  <a href="https://ultralight.school/transmissions/code-of-conduct/">Code of Conduct, Ultralight School</a><br>
-                  (General guidelines on interacting as a class)
-                </div>
-                <div>
-                  <p>
-                  <b>Elsewhere...</b>
-                  </p>
-                  <p>
-                    NYC Installation:<br>
-                    <a href="https://www.olfactoryartkeller.com/scent-library">The Scent Lending Library</a><br>
-                    (at Olfactory Art Keller)
-                  </p>
-                  <p>
-                    NYC Store:<br>
-                    <a href="https://maps.app.goo.gl/vMsikMgSn7KZFQfU8">Scent Bar</a><br>
-                    (by Luckyscent)
-                  </p>
-                </div>
-            </div> -->
-        
-
     </section>
 
     
