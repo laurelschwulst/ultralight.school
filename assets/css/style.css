@@ -259,6 +259,14 @@ ul.keywords li {
   padding-left: 0.25em;
 }
 
+ul.simple {
+  list-style-type: none;
+}
+
+ul.simple li {
+  padding: 0;
+}
+
 .question {
   font-size: 14px;
   line-height: 1.4;
