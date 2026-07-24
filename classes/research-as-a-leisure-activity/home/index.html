@@ -34,6 +34,37 @@
       .inside {
          padding: 0.5rem;
       }
+      .print {
+        display: none;
+      }
+      a.back-to-top {
+        text-decoration: none; margin-top: 2.5em; display: inline-block; font-size: 1em;
+      }
+      @media print {
+        .print {
+          display: block;
+        }
+        figure.raala-logo {
+          max-width: 350px !important;
+          margin: 0;
+        }
+        nav#left,
+        footer details,
+        a.back-to-top {
+          display: none;
+        }
+        .columns.for-print {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 2.5em;
+        }
+        .print-page-break {
+          break-after: page;
+        }
+        .print-no-top-margin {
+          margin-top: 0;
+        }
+      }
     </style>
   </head>
 
@@ -43,7 +74,7 @@
     <div class="columns">
 
         <div style="padding-top: 3em;">
-          <figure>
+          <figure class="raala-logo">
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 882.92 564.7">
               <!-- Generator: Adobe Illustrator 30.4.0, SVG Export Plug-In . SVG Version: 2.1.4 Build 226)  -->
               <defs>
@@ -78,6 +109,13 @@
                   <li>Saturday, July 25 — 10am-7pm</li>
                   <li>Sunday, July 26 — 10am-5pm</li>
                 </ul>
+
+                <div class="print">
+                    <br><img src="assets/images/qr.png" width="75"><br>
+<i>This is a printed out version of our class website, located here:
+  <a href="https://ultralight.school/classes/research-as-a-leisure-activity/home/">https://ultralight.school/classes/research-as-a-leisure-activity/home/</a></i><br><br>
+  <i>Note the class website has links to our collaborative Google Drive and Are.na Group!</i>
+</div>
                 
             </div>
         </div>
@@ -99,7 +137,7 @@
     </nav>
 
 
-    <section>
+    <section class="print-page-break">
 
         <h3 id="schedule" style="border-bottom: 0;">Schedule</h3>
 
@@ -259,9 +297,9 @@ bring whatever you need for your project — laptop, synthesizers, notebook, ?
     </section> -->
 
 
-    <section>
-      <h3 id="people-place">People & Place</h3>
-        <div class="columns">
+    <section class="print-page-break">
+      <h3 id="people-place" class="print-no-top-margin">People & Place</h3>
+        <div class="columns for-print">
           <div style="margin-top: 1em;">
 
               ✦ Participants<br><br>
@@ -348,7 +386,7 @@ bring whatever you need for your project — laptop, synthesizers, notebook, ?
 
 
     <section>
-        <h3 id="overview">Overview</h2>
+        <h3 id="overview" class="print-no-top-margin">Overview</h2>
             <p>
               This is the class homepage for <a href="https://ultralight.school/classes/research-as-a-leisure-activity/index.html" target="_blank">Research as a Leisure Activity</a>, co-taught by Celine Nguyen & Laurel Schwulst, for Ultralight School.
             </p>
@@ -412,7 +450,7 @@ bring whatever you need for your project — laptop, synthesizers, notebook, ?
             </div>
         </div>
         
-        <a href="#top" style="text-decoration: none; margin-top: 2.5em; display: inline-block; font-size: 1em">↑</a>
+        <a href="#top" class="back-to-top">↑</a>
     </footer>
 
 </main>
